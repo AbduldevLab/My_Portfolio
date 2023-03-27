@@ -96,8 +96,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
+.card__info p {
+  margin: 5;
+}
 
+@media (min-width: 400px) {
+  .card__info p {
+    flex-basis: 50%;
+  }
+}
 
 @media screen and (max-width: 900px) {
 

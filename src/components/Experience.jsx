@@ -146,7 +146,7 @@ const Experience = () => {
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Internship
           </p>
-          <p className="py-6">These are the internships I've done to date.</p>
+          <p className="py-6">I've completed the following internships so far with.</p>
         </div>
             <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
               {internships.map(({ id, src, role, duration, style }) => (
@@ -155,8 +155,10 @@ const Experience = () => {
                className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
              >
                <img src={src} alt="" className="w-20 mx-auto" />
-               <p className="mt-6">{role}</p>
-                <p className="mt-1">{duration}</p>
+               <div className="card__info">
+               <p className="mt-6" style={{ flexBasis: "100%" }}>{role}</p>
+                <p className="mt-2" style={{ flexBasis: "100%" }}>{duration}</p>
+                </div>
              </div>
               ))}
             </div>
