@@ -32,7 +32,7 @@ function Education() {
         <div className="box">
           <span>+10</span>
           <h3>Awards won<br/></h3>
-          <p>Football<br/>Academic awards<br/>Youth club.</p>
+          <p>Football,<br/>Academic awards,<br/>Youth club.</p>
         </div>
       </div>
     </div>
