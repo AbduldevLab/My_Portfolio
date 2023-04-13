@@ -49,12 +49,18 @@ body {
 
 .portfolio,
 .contact {
-  margin-top: 8%;
+  margin-top: 5%;
+}
+.experience {
+  margin-top: 5%;
 }
 
-.experience {
-  margin-top: 12%;
+.education {
+  margin-top: 8%;
 }
+/* .experience {
+  margin-top: 8%;
+} */
 
 
 .nav-links {
@@ -68,15 +74,15 @@ body {
 .box {
   background-color: #2d3748;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  padding: 0px;
+  margin: 5px;
   text-align: center;
 }
 
 .box h3 {
   font-size: 24px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .box p {
@@ -103,7 +109,7 @@ body {
 }
 
 .card__info p {
-  margin: 5;
+  margin: 10;
 }
 
 @media (min-width: 400px) {
@@ -112,7 +118,7 @@ body {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
   #root {
     background: linear-gradient(rgb(31, 41, 55) 20%, black 20%, rgb(31, 41, 55) 65%, black 25%);
@@ -123,6 +129,7 @@ body {
   .contact,
   .portfolio,
   .experience,
+  .education,
   .home {
     text-align: center;
     height: 100%;
@@ -130,6 +137,7 @@ body {
 
   .about,
   .portfolio,
+  .education,
   .experience {
     margin-top: 10%;
   }

@@ -4,31 +4,35 @@ function Education() {
   return (
     <div
       name="education"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen experience"
-    >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+      className="education w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      >
+        <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+          <div className="pb-8">
+            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Education
           </p>
           <p className="py-6">All my academic work and qualifications.</p>
         </div>
-        <div className="box">
-          <i className="fas fa-graduation-cap"></i>
-          <span>2013-2019</span>
-          <h3>Leaving Certificate</h3>
-          <p>Riversdale (Rath dara)<br/> Community College</p>
-        </div>
+        {/*University*/}
         <div className="box">
           <i className="fas fa-graduation-cap"></i>
           <span>2019-2023</span>
           <h3>Bachelors Science Degree</h3>
           <p>Maynooth University<br/> (Computer Science & <br/>Software Engineering)</p>
         </div>
+          {/*LC*/}
+        <div className="box">
+          <i className="fas fa-graduation-cap"></i>
+          <span>2013-2019</span>
+          <h3>Leaving Certificate</h3>
+          <p>Riversdale (Rath dara)<br/> Community College</p>
+        </div>
+          {/*VW*/}
         <div className="box">
           <h3>Voluntary work</h3>
           <p>Jigsaw Mentor,<br/>Sports leadership &<br/> relief Ireland</p>
         </div>
+          {/*Awards*/}
         <div className="box">
           <span>+10</span>
           <h3>Awards won<br/></h3>

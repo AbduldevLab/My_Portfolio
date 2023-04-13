@@ -4,14 +4,13 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-100 bg-gradient-to-b from-gray-800 to-black text-white about"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
+      className="about w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      >
+        <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+          <div className="pb-8">
+            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            About Me
           </p>
-        </div>
 
         <p className="text-xl mt-5">
         I'm a final-year Software Engineer and Computer Science student. Excited for improving my skills and learning new technologies.
@@ -28,6 +27,7 @@ const About = () => {
         Over the years, I have visited more than 10 different countries, each with its own unique experiences and memories. Additionally, I have a deep love for sports and staying active. Whether it's joining a gym or taking my dog, Jax, out for a jog, I always find a way to keep myself active and engaged
         </p>
       </div>
+    </div>
     </div>
   );
 };
