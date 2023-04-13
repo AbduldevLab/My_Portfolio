@@ -36,7 +36,19 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Rahul</a></h1> */}
-        <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black" href="abdul" target="_blank" rel="noreferrer">Abdul</a></h1>
+        <h1 className="text-5xl font-signature ml-2">
+          <Link className="link-underline link-underline-black" 
+             href="abdul" target="_blank" 
+             rel="noreferrer"
+             to="home"
+             smooth={true}
+             duration={500}
+             onClick={() => setNav(false)}
+             style={{ userSelect: "none" }}
+           >
+            Abdul
+           </Link>
+            </h1>
       </div>
 
       <ul className="hidden md:flex">
@@ -45,7 +57,7 @@ const NavBar = () => {
             key={id}
             className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
           >
-            <Link to={link} smooth duration={500}>
+            <Link to={link} smooth duration={500} style={{ userSelect: "none" }}>
               {link}
             </Link>
           </li>
@@ -54,6 +66,7 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
+        style={{ userSelect: "none" }}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
@@ -68,6 +81,7 @@ const NavBar = () => {
             >
               <Link
                 onClick={() => setNav(!nav)}
+                style={{ userSelect: "none" }}
                 to={link}
                 smooth
                 duration={500}
