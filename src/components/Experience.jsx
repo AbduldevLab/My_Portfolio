@@ -96,10 +96,10 @@ const Experience = () => {
   const internships = [
     {
       id: 1,
-      src: accenture,
-      role: "Technical Customer Support",
-      duration: "June 2022 - August 2022",
-      style: "shadow-purple-600"
+      src: valeo,
+      role: "Support Engineer",
+      duration: "January 2022 - March 2022",
+      style: "shadow-green-400"
     },
     {
       id: 2,
@@ -110,10 +110,10 @@ const Experience = () => {
     },
     {
       id: 3,
-      src: valeo,
-      role: "Support Engineer",
-      duration: "January 2022 - March 2022",
-      style: "shadow-green-400"
+      src: accenture,
+      role: "Technical Customer Support",
+      duration: "June 2022 - September 2022",
+      style: "shadow-purple-600"
     }
   ];
 
@@ -123,7 +123,7 @@ const Experience = () => {
       className="experience w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
       >
         <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-          <div className="pb-5">
+          <div className="pb-6">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Experience
           </p>
