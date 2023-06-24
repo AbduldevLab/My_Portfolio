@@ -19,12 +19,12 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Software Engineer & Computer Science Student
+            Recent graduate in Software Engineering & Computer Science with a 2:1 BSc (Hons).
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
           I gained additional experience through personal projects, where I love working on web applications using 
           technologies such as React JSX. In addition to a 7-month internship, I have honed my skills and passion 
-          for web development through various personal projects.
+          for programming through various personal projects.
           </p>
 
           <div className="portfolio-btn">

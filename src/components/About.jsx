@@ -13,7 +13,8 @@ const About = () => {
           </p>
 
         <p className="text-xl mt-5">
-        I'm a final-year Software Engineer and Computer Science student. Excited for improving my skills and learning new technologies.
+        I received my BSc 2:1 Honours Degree in Software Engineering and Computer Science from the National University of Maynooth Ireland, as well as an 82% on my Final Year Project.
+         I'm excited to learn new technologies and to develop my soft and technical abilities.
         </p>
 
         <br />
