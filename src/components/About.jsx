@@ -13,7 +13,7 @@ const About = () => {
           </p>
 
         <p className="text-xl mt-5">
-        I received my BSc 2:1 Honours Degree in Software Engineering and Computer Science from the National University of Maynooth Ireland, as well as an 82% on my Final Year Project.
+        I received my BSc 2:1 Honours Degree in Computer Science & Software Engineering from the National University of Ireland Maynooth, as well as an 82% on my Final Year Project.
          I'm excited to learn new technologies and to develop my soft and technical abilities.
         </p>
 
