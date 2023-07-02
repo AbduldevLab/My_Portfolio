@@ -3,6 +3,17 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import resume from "../assets/resume.pdf"
+
+const getFileNameWithoutExtension = (filePath) => {
+  const fileName = filePath.split("/").pop();
+  return fileName.split(".")[0];
+};
+
+const renameFile = (fileName, newName) => {
+  const extension = fileName.split(".").pop();
+  return `${newName}.${extension}`;
+};
+
 const SocialLinks = () => {
   const links = [
     {
@@ -41,7 +52,10 @@ const SocialLinks = () => {
         </>
       ),
       href: resume,
-      download: true,
+      download: `${renameFile(
+        getFileNameWithoutExtension(resume),
+        "Abderahman_Haouit_CV"
+      )}.pdf`,
     },
   ];
 
