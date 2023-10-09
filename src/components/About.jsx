@@ -20,12 +20,12 @@ const About = () => {
         <br />
 
         <p className="text-xl">
-        I have always had a passion for problem-solving and technology. Growing up, I was always fascinated by the intricate workings of computers and how they could be used to create solutions to everyday problems. I have a particular interest in working with the internet and the web. 
+        I've always had a passion for technology and how it worked. Growing up, I was always interested by the complex way computers operated and how they could be applied to solve issues encountered in daily life. Working with the internet and the web/mobile is something I'm particularly interested in. 
         I am constantly intrigued by the ever-changing landscape of the online world and how it can be leveraged to create innovative solutions. 
-        I have experience using React to develop web applications, and I find the process of creating dynamic and interactive interfaces to be both challenging and rewarding.<br /> <br />
-        In my pursuit of knowledge and expertise in the field, I discovered my aptitude for algorithms and honed my problem-solving skills. I am driven by a desire to solve problems and achieve the goals I set for myself.
+        I have experience using React to develop web/mobile applications, and I find the process of creating dynamic and interactive interfaces to be both challenging and rewarding.<br /> <br />
+        In my pursuit of knowledge and expertise in the field, I discovered my aptitude for algorithms and improved my problem-solving skills. I am driven by a desire to solve problems and achieve the goals I set for myself.
         Outside of my academic pursuits, I love exploring new cultures and traveling with friends. <br/> <br/>
-        Over the years, I have visited more than 10 different countries, each with its own unique experiences and memories. Additionally, I have a deep love for sports and staying active. Whether it's joining a gym or taking my dog, Jax, out for a jog, I always find a way to keep myself active and engaged
+        Over the years, I have visited more than 10 different countries, each with its own unique experiences and memories. Additionally, I have a deep love for football and staying active. Whether it's joining a gym or taking my dog for a walk, I always find a way to keep myself active and engaged.
         </p>
       </div>
     </div>
