@@ -4,7 +4,8 @@ import calmness from "../assets/portfolio/calmness.jpg";
 import ipaddress from "../assets/portfolio/ipaddress.png";
 import delivery from "../assets/portfolio/delivery.png";
 import targetLocation from "../assets/portfolio/targetlocation.jpg";
-import tictactoe from "../assets/portfolio/tictactoe.png";
+import WeatherApp from "../assets/portfolio/weatherApp.png";
+//import tictactoe from "../assets/portfolio/tictactoe.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -16,29 +17,35 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      src: WeatherApp,
+      link: 'https://abdulhaouit.github.io/NT-Weather-WebApp/',
+      repo: 'https://github.com/AbduldevLab/NT-Weather-WebApp'
+    },
+    {
+      id: 3,
       src: calmness,
       repo: 'https://github.com/AbdulHaouit/Calmness_web_app'
     },
     {
-      id: 3,
+      id: 4,
       src: ipaddress,
       repo: 'https://github.com/AbdulHaouit/TrackIPAddress'
     },
     {
-      id: 4,
+      id: 5,
       src: delivery,
       repo: 'https://github.com/AbdulHaouit/Delivery_app'
     },
     {
-      id: 5,
+      id: 6,
       src: targetLocation,
       repo: 'https://github.com/AbdulHaouit/TargetInternet'
     },
-    {
-      id: 6,
-      src: tictactoe,
-      repo: 'https://github.com/AbdulHaouit/TicTacToe_Game'
-    },
+    // {
+    // //   id: 6,
+    // //   src: tictactoe,
+    // //   repo: 'https://github.com/AbdulHaouit/TicTacToe_Game'
+    // // },
 
 
   ];
@@ -65,7 +72,7 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-              {id === 1 && (
+              {(id === 1 || id === 2) && (
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={() => window.open(link, '_blank')}>
                     Demo
                   </button>
