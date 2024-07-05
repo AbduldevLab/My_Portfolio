@@ -12,34 +12,34 @@ const Portfolio = () => {
     {
       id: 1,
       src: kake,
-      link: 'https://kakedessertdelivery.com/',
-      repo: 'https://github.com/AbdulHaouit/KakeDessertDelivery-FYP'
+      link: 'https://kake-project.web.app/',
+      repo: 'https://github.com/AbduldevLab/KakeDessertDelivery-FYP'
     },
     {
       id: 2,
       src: WeatherApp,
-      link: 'https://abdulhaouit.github.io/NT-Weather-WebApp/',
+      link: 'https://AbduldevLab.github.io/NT-Weather-WebApp/',
       repo: 'https://github.com/AbduldevLab/NT-Weather-WebApp'
     },
     {
       id: 3,
       src: calmness,
-      repo: 'https://github.com/AbdulHaouit/Calmness_web_app'
+      repo: 'https://github.com/AbduldevLab/Calmness_web_app'
     },
     {
       id: 4,
       src: ipaddress,
-      repo: 'https://github.com/AbdulHaouit/TrackIPAddress'
+      repo: 'https://github.com/AbduldevLab/TrackIPAddress'
     },
     {
       id: 5,
       src: delivery,
-      repo: 'https://github.com/AbdulHaouit/Delivery_app'
+      repo: 'https://github.com/AbduldevLab/Delivery_app'
     },
     {
       id: 6,
       src: targetLocation,
-      repo: 'https://github.com/AbdulHaouit/TargetInternet'
+      repo: 'https://github.com/AbduldevLab/TargetInternet'
     },
     // {
     // //   id: 6,
