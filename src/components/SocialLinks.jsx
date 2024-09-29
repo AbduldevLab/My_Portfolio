@@ -19,7 +19,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/abdul-haouit-244940193/",
+      href: "https://www.linkedin.com/in/abder-h-244940193/",
       style: "rounded-tr-md",
     },
     {
