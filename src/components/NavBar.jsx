@@ -46,7 +46,7 @@ const NavBar = () => {
              onClick={() => setNav(false)}
              style={{ userSelect: "none" }}
            >
-            Abdul
+            Abder
            </Link>
             </h1>
       </div>
