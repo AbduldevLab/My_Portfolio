@@ -47,20 +47,22 @@ body {
   line-height: 1.2;
 }
 
-.portfolio,
+.portfolio{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 .contact {
   margin-top: 5%;
+    margin-bottom: 5%;
 }
 .experience {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
-
 .education {
-  margin-top: 8%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-/* .experience {
-  margin-top: 8%;
-} */
 
 
 .nav-links {

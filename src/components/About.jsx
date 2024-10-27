@@ -20,13 +20,15 @@ const About = () => {
         <br />
 
         <p className="text-xl">
-        I've always had a passion for technology and how it worked. Growing up, I was always interested by the complex way computers operated and how they could be applied to solve issues encountered in daily life. Working with the internet and the web/mobile is something I'm particularly interested in. 
-        I am constantly intrigued by the ever-changing landscape of the online world and how it can be leveraged to create innovative solutions. 
-        I have experience using React to develop web/mobile applications, and I find the process of creating dynamic and interactive interfaces to be both challenging and rewarding.<br /> <br />
-        In my pursuit of knowledge and expertise in the field, I discovered my aptitude for algorithms and improved my problem-solving skills. I am driven by a desire to solve problems and achieve the goals I set for myself.
-        Outside of my academic pursuits, I love exploring new cultures and traveling with friends. <br/> <br/>
-        Over the years, I have visited more than 10 different countries, each with its own unique experiences and memories. Additionally, I have a deep love for football and staying active. Whether it's joining a gym or taking my dog for a walk, I always find a way to keep myself active and engaged.
-        </p>
+          I've always had a passion for technology and a curiosity about how things work. Growing up, I was fascinated by the intricate workings of computers and their potential to solve everyday problems. My interests extend to the internet, especially web and mobile applications, as well as AI and machine learning. 
+          The ever-evolving digital landscape constantly intrigues me, and I enjoy exploring how it can be utilised to create innovative solutions. 
+          I have hands-on experience using React to develop web and mobile applications, and I find the process of building dynamic, interactive interfaces both challenging and rewarding.
+          <br /><br />
+          In my pursuit of knowledge in this field, I've developed a strong aptitude for algorithms and enhanced my problem-solving skills. I'm driven by the desire to overcome challenges and achieve the goals I set for myself. 
+          AI and machine learning are undoubtedly the future, and they captivate me because, at the core of all these exciting technological solutions, the ultimate aim is to make life easier for people.
+          <br /><br />
+          Outside of my professional interests, I enjoy exploring new cultures and traveling with friends. Over the years, I've visited more than ten countries, each offering unique experiences and memories. Additionally, I have a passion for football and staying active. Whether it's hitting the gym or taking my dog for a walk, I always find ways to stay engaged and active.
+      </p>
       </div>
     </div>
     </div>

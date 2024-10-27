@@ -16,8 +16,14 @@ function Education() {
         {/*University*/}
         <div className="box">
           <i className="fas fa-graduation-cap"></i>
+          <span>2024-2026</span>
+          <h3>Master's of Science Degree</h3>
+          <p>University of Limerick<br/> (Artificial Intelligence)</p>
+        </div>
+        <div className="box">
+          <i className="fas fa-graduation-cap"></i>
           <span>2019-2023</span>
-          <h3>Bachelors Science Degree</h3>
+          <h3>Bachelor's of Science Degree</h3>
           <p>Maynooth University<br/> (Computer Science & <br/>Software Engineering)</p>
         </div>
           {/*LC*/}
@@ -30,7 +36,7 @@ function Education() {
           {/*VW*/}
         <div className="box">
           <h3>Voluntary work</h3>
-          <p>Jigsaw Mentor,<br/>Sports leadership &<br/> relief Ireland</p>
+          <p>BITCI Coordinator & Volunteer,<br/>Jigsaw Mentor,<br/>Sports leadership &<br/> relief Ireland</p>
         </div>
           {/*Awards*/}
         <div className="box">
