@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/My_Portfolio/static/css/main.37015add.css",
-    "main.js": "/My_Portfolio/static/js/main.687bfde9.js",
+    "main.css": "/My_Portfolio/static/css/main.8e8d261d.css",
+    "main.js": "/My_Portfolio/static/js/main.1fc0cb62.js",
     "static/media/kake.PNG": "/My_Portfolio/static/media/kake.5cb9c25448873a642cc1.PNG",
     "static/media/weatherApp.png": "/My_Portfolio/static/media/weatherApp.82196f7e43132536501e.png",
     "static/media/calmness.jpg": "/My_Portfolio/static/media/calmness.1b2c69bc607092247cbb.jpg",
-    "static/media/Abderahman_Haouit_CV.pdf": "/My_Portfolio/static/media/Abderahman_Haouit_CV.9206bab3f34abd5e34df.pdf",
+    "static/media/Abderahman_Haouit_CV.pdf": "/My_Portfolio/static/media/Abderahman_Haouit_CV.164a5f59054e7fd21b2d.pdf",
     "static/media/delivery.png": "/My_Portfolio/static/media/delivery.21d7ccc6ff59c28e5cf5.png",
     "static/media/java.png": "/My_Portfolio/static/media/java.fdabd4e11f1235e4e8e0.png",
     "static/media/ipaddress.png": "/My_Portfolio/static/media/ipaddress.06f458b5fd7dd903b3d4.png",
@@ -16,17 +16,15 @@
     "static/media/typescript.png": "/My_Portfolio/static/media/typescript.52ea0bc40ba11d507e7d.png",
     "static/media/github.png": "/My_Portfolio/static/media/github.3b9e32903aa89111875d.png",
     "static/media/html.png": "/My_Portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/tailwind.png": "/My_Portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/css.png": "/My_Portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/firebase.png": "/My_Portfolio/static/media/firebase.5857e021bf02081fa355.png",
-    "static/media/cSharp.png": "/My_Portfolio/static/media/cSharp.fc430729bfa8902c06fd.png",
     "static/media/javascript.png": "/My_Portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/My_Portfolio/index.html",
-    "main.37015add.css.map": "/My_Portfolio/static/css/main.37015add.css.map",
-    "main.687bfde9.js.map": "/My_Portfolio/static/js/main.687bfde9.js.map"
+    "main.8e8d261d.css.map": "/My_Portfolio/static/css/main.8e8d261d.css.map",
+    "main.1fc0cb62.js.map": "/My_Portfolio/static/js/main.1fc0cb62.js.map"
   },
   "entrypoints": [
-    "static/css/main.37015add.css",
-    "static/js/main.687bfde9.js"
+    "static/css/main.8e8d261d.css",
+    "static/js/main.1fc0cb62.js"
   ]
 }
