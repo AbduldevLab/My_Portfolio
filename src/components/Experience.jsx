@@ -219,7 +219,7 @@ const Experience = () => {
     {
       id: 2,
       src: brainnest,
-      role: "Front-end Dev",
+      role: "Front-end Developer",
       duration: "April 2022 - May 2022",
       style: "shadow-yellow-600",
     },
@@ -278,9 +278,9 @@ const Experience = () => {
           {fullTime.map(({ id, src, role, duration, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} flex flex-col items-center`}
             >
-              <img src={src} alt="" className="w-10 mx-auto" />
+              <img src={src} alt="" className="w-16 h-16 rounded-lg mx-auto" />
               <div className="card__info">
                 <p className="mt-6" style={{ flexBasis: "100%" }}>
                   {role}
@@ -305,9 +305,9 @@ const Experience = () => {
           {internships.map(({ id, src, role, duration, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} flex flex-col items-center`}
             >
-              <img src={src} alt="" className="w-10 mx-auto" />
+              <img src={src} alt="" className="w-16 h-16 rounded-lg mx-auto" />
               <div className="card__info">
                 <p className="mt-6" style={{ flexBasis: "100%" }}>
                   {role}
