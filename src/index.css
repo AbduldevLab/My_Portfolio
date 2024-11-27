@@ -62,7 +62,6 @@ body {
   margin-top: 8%;
 } */
 
-
 .nav-links {
   text-underline-offset: 1rem;
 }
@@ -119,9 +118,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   #root {
-    background: linear-gradient(rgb(31, 41, 55) 20%, black 20%, rgb(31, 41, 55) 65%, black 25%);
+    background: linear-gradient(
+      rgb(31, 41, 55) 20%,
+      black 20%,
+      rgb(31, 41, 55) 65%,
+      black 25%
+    );
     min-height: 100vh;
   }
 
@@ -172,11 +175,9 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
 }
 @media screen and (min-width: 1024px) {
   .experience {
     padding-top: 10rem;
   }
 }
-

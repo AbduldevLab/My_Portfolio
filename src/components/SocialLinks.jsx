@@ -6,14 +6,14 @@ import resume from "../assets/Abderahman_Haouit_CV.pdf";
 
 
 const renameFile = (filePath, newName) => {
-  const extension = filePath.split(".").pop();
+      const extension = filePath.split(".").pop();
   return `${newName}.${extension}`;
 };
 
 const SocialLinks = () => {
-  const links = [
+     const links = [
     {
-      id: 1,
+          id: 1,
       child: (
         <>
           LinkedIn <FaLinkedin size={30} />
