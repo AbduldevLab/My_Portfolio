@@ -2,13 +2,6 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import resume from "../assets/Abderahman_Haouit_CV.pdf";
-
-
-const renameFile = (filePath, newName) => {
-      const extension = filePath.split(".").pop();
-  return `${newName}.${extension}`;
-};
 
 const SocialLinks = () => {
      const links = [
@@ -47,8 +40,8 @@ const SocialLinks = () => {
           CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: resume,
-      download: `${renameFile(resume, "Abderahman_Haouit_CV")}`,
+      href: '/Abderahman_Haouit_CV.pdf',
+      target: "_blank"
     },
   ];
 
