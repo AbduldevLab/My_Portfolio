@@ -40,7 +40,7 @@ const SocialLinks = () => {
           CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: '/Abderahman_Haouit_CV.pdf',
+      href: `${process.env.PUBLIC_URL}/Abderahman_Haouit_CV.pdf`,
       target: "_blank"
     },
   ];
