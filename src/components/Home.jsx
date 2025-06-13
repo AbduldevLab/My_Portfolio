@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import HeroImage from "../assets/heroImage.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
@@ -10,7 +10,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-      <div className="small-screen hidden">
+        <div className="small-screen hidden">
           <img
             src={HeroImage}
             alt="profile"
@@ -19,15 +19,19 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            Recent graduate in Computer Science & Software Engineering with a 2.1 BSc (Hons).
+            Software Developer with a strong foundation in Full-Stack
+            Engineering & a BSc (Hons) in Computer Science & Software
+            Engineering.
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I gained valuable experience through personal projects, where I enjoy working on web and mobile applications using 
-            technologies like React and TypeScript. Along with a 7-month internship, I've developed my skills and passion for 
-            programming by tackling various personal projects. Currently, I'm Currently employed with northern trust in a graduate program in tech, 
-            <br></br><br/>Starting January 2025, I will be pursuing a part-time Master of Science degree over the course of two years in AI from the University of Limerick.
+            I’m currently employed at Northern Trust, contributing to the
+            development of microservices-based platforms for global banking,
+            using technologies like Java, Spring Boot, React, TypeScript & Azure
+            DevOps. I’m also currently pursuing a part-time MSc in Artificial
+            Intelligence at the University of Limerick, deepening my expertise
+            in modern AI technologies and their real-world applications.
           </p>
-        <div className="portfolio-btn">
+          <div className="portfolio-btn">
             <Link
               to="portfolio"
               smooth
@@ -48,7 +52,6 @@ const Home = () => {
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
         </div>
-        
       </div>
     </div>
   );

@@ -37,18 +37,20 @@ const NavBar = () => {
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Rahul</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
-          <Link className="link-underline link-underline-black" 
-             href="abdul" target="_blank" 
-             rel="noreferrer"
-             to="home"
-             smooth={true}
-             duration={500}
-             onClick={() => setNav(false)}
-             style={{ userSelect: "none" }}
-           >
+          <Link
+            className="link-underline link-underline-black"
+            href="abdul"
+            target="_blank"
+            rel="noreferrer"
+            to="home"
+            smooth={true}
+            duration={500}
+            onClick={() => setNav(false)}
+            style={{ userSelect: "none" }}
+          >
             Abder
-           </Link>
-            </h1>
+          </Link>
+        </h1>
       </div>
 
       <ul className="hidden md:flex">
@@ -57,7 +59,12 @@ const NavBar = () => {
             key={id}
             className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
           >
-            <Link to={link} smooth duration={500} style={{ userSelect: "none" }}>
+            <Link
+              to={link}
+              smooth
+              duration={500}
+              style={{ userSelect: "none" }}
+            >
               {link}
             </Link>
           </li>

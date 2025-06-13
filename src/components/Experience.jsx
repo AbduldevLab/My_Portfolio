@@ -4,17 +4,10 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-// import github from "../assets/github.png";
-// import git from "../assets/git.png";
-//import tailwind from "../assets/tailwind.png";
 import python from "../assets/python.png";
-//import bootstrap from "../assets/bootstrap.png";
 import node from "../assets/node.png";
-//import redux from "../assets/redux.png";
 import typescript from "../assets/typescript.png";
 import firebase from "../assets/firebase.png";
-// import java from "../assets/java.png";
-// import cSharp from "../assets/cSharp.png";
 
 import northernTrust from "../assets/northern-trust.png";
 import accenture from "../assets/accenture.png";

@@ -1,7 +1,7 @@
 import React from "react";
 
 //function for form reset
-function handleSubmit(e){
+function handleSubmit(e) {
   setTimeout(() => {
     e.target.reset();
   }, 3000);
@@ -20,7 +20,7 @@ const Contact = () => {
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
-        
+
         <div className=" flex justify-center items-center">
           <form
             onSubmit={handleSubmit}
@@ -51,7 +51,10 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button type="submit" className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button
+              type="submit"
+              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+            >
               Send Message
             </button>
           </form>

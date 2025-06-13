@@ -5,32 +5,55 @@ const About = () => {
     <div
       name="about"
       className="about w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
-      >
-        <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-          <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+    >
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About Me
           </p>
 
-        <p className="text-xl mt-5">
-        I received my BSc 2:1 Honours Degree in Computer Science & Software Engineering from the National University of Ireland Maynooth, as well as an 82% on my Final Year Project.
-         I'm excited to learn new technologies and to develop my soft and technical abilities.
-        </p>
+          <p className="text-xl mt-5">
+            I hold a 2:1 Honours BSc in Computer Science & Software Engineering
+            from the National University of Ireland Maynooth, where I earned an
+            82% on my Final Year Project. Since graduating, I've continued to
+            grow professionally and academically—currently working as a Full
+            Stack Engineer at Northern Trust and pursuing a part-time MSc in
+            Artificial Intelligence at the University of Limerick.
+          </p>
 
-        <br />
+          <br />
 
-        <p className="text-xl">
-          I've always had a passion for technology and a curiosity about how things work. Growing up, I was fascinated by the intricate workings of computers and their potential to solve everyday problems. My interests extend to the internet, especially web and mobile applications, as well as AI and machine learning. 
-          The ever-evolving digital landscape constantly intrigues me, and I enjoy exploring how it can be utilised to create innovative solutions. 
-          I have hands-on experience using React to develop web and mobile applications, and I find the process of building dynamic, interactive interfaces both challenging and rewarding.
-          <br /><br />
-          In my pursuit of knowledge in this field, I've developed a strong aptitude for algorithms and enhanced my problem-solving skills. I'm driven by the desire to overcome challenges and achieve the goals I set for myself. 
-          AI and machine learning are undoubtedly the future, and they captivate me because, at the core of all these exciting technological solutions, the ultimate aim is to make life easier for people.
-          <br /><br />
-          Outside of my professional interests, I enjoy exploring new cultures and traveling with friends. Over the years, I've visited more than ten countries, each offering unique experiences and memories. Additionally, I have a passion for football and staying active. Whether it's hitting the gym or taking my dog for a walk, I always find ways to stay engaged and active.
-      </p>
+          <p className="text-xl">
+            My passion for technology began early on with a curiosity about how
+            things work. Over the years, this curiosity has grown into a
+            commitment to building practical, impactful solutions—particularly
+            in the areas of web, mobile, and AI development. I’m especially
+            fascinated by how the ever-evolving digital landscape can be used to
+            solve real-world problems.
+            <br />
+            <br />
+            I have hands-on experience using Java, spring boot, React, TypeScript to
+            develop full-stack web applications. I thrive on creating
+            dynamic and user-focused interfaces, and enjoy the challenge and
+            reward that come with solving technical problems. My academic and
+            industry work have also strengthened my algorithmic thinking and
+            problem-solving mindset.
+            <br />
+            <br />
+            AI and machine learning are central to where technology is headed,
+            and deepening my knowledge in these areas through both my
+            MSc and practical work. At the heart of it all, I’m driven by a
+            desire to use technology to make life easier and more efficient for
+            people especially when it comes to health and well-being.
+            <br />
+            <br />
+            Outside of tech, I love exploring new cultures and have traveled to
+            over 15 countries, each offering its own unique experiences. I’m also
+            passionate about football and staying active—whether it’s at the gym
+            or outdoors.
+          </p>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

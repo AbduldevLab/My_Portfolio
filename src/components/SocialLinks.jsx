@@ -4,9 +4,9 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
-     const links = [
+  const links = [
     {
-          id: 1,
+      id: 1,
       child: (
         <>
           LinkedIn <FaLinkedin size={30} />
@@ -41,7 +41,7 @@ const SocialLinks = () => {
         </>
       ),
       href: `${process.env.PUBLIC_URL}/Abderahman_Haouit_CV.pdf`,
-      target: "_blank"
+      target: "_blank",
     },
   ];
 
