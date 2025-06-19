@@ -18,7 +18,7 @@ const Home:React.FC = () => {
           />
         </div>
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-2xl sm:text-4xl font-bold text-white">
             Software Developer with a strong foundation in Full-Stack
             Engineering & a BSc (Hons) in Computer Science & Software
             Engineering.
