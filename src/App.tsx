@@ -1,3 +1,5 @@
+import React from "react";
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -8,7 +10,7 @@ import SocialLinks from "./components/SocialLinks";
 import Education from "./components/Education";
 import Footer from "./components/Footer"
 
-function App() {
+const App:React.FC = () => {
   return (
     <div>
       <NavBar />

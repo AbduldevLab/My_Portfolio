@@ -1,5 +1,3 @@
-import React from "react";
-
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -14,7 +12,7 @@ import accenture from "../assets/accenture.png";
 import brainnest from "../assets/brainnest.png";
 import valeo from "../assets/valeo.png";
 
-const Experience = () => {
+const Experience:React.FC = () => {
   const techs = [
     {
       id: 1,
@@ -227,6 +225,7 @@ const Experience = () => {
 
   return (
     <div
+    // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
       name="experience"
       className="experience w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const SocialLinks = () => {
+const SocialLinks: React.FC =() => {
   const links = [
     {
       id: 1,
@@ -14,6 +14,7 @@ const SocialLinks = () => {
       ),
       href: "https://www.linkedin.com/in/abder-h-244940193/",
       style: "rounded-tr-md",
+      download: false,
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://github.com/Abduldevlab",
+      download: false,
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "mailto:abdul01hd@yahoo.com",
+      download: false,
     },
     {
       id: 4,
@@ -40,15 +43,16 @@ const SocialLinks = () => {
           CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: `${process.env.PUBLIC_URL}/Abderahman_Haouit_CV.pdf`,
+      href: "/Abderahman_Haouit_CV.pdf",
       target: "_blank",
+      download: false,
     },
   ];
 
   return (
     <div className=" lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href, style, download }) => (
+        {links.map(({ id, child, href, style, target }) => (
           <li
             key={id}
             className={
@@ -60,8 +64,8 @@ const SocialLinks = () => {
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
-              download={download}
-              target="_blank"
+              // download={download}
+              target={target}
               rel="noreferrer"
             >
               {child}

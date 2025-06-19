@@ -1,11 +1,11 @@
-// import React from "react";
 import HeroImage from "../assets/heroImage.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
-const Home = () => {
+const Home:React.FC = () => {
   return (
     <div
+    // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
     >

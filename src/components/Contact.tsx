@@ -1,15 +1,17 @@
-import React from "react";
+import React from 'react';
 
-//function for form reset
-function handleSubmit(e) {
+interface ContactFormElement extends HTMLFormElement {}
+
+function handleSubmit(e: React.FormEvent<ContactFormElement>): void {
   setTimeout(() => {
-    e.target.reset();
+    e.currentTarget.reset();
   }, 3000);
 }
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <div
+    // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
       name="contact"
       className="contact w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
@@ -46,7 +48,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              rows="10"
+              rows={10}
               required
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>

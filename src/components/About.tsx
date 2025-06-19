@@ -1,8 +1,9 @@
 import React from "react";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div
+      // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
       name="about"
       className="about w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >

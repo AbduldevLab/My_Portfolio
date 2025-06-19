@@ -6,7 +6,7 @@ import delivery from "../assets/portfolio/delivery.png";
 import targetLocation from "../assets/portfolio/targetlocation.jpg";
 import WeatherApp from "../assets/portfolio/weatherApp.png";
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
   const portfolios = [
     {
       id: 1,
@@ -49,6 +49,7 @@ const Portfolio = () => {
 
   return (
     <div
+    // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
       name="portfolio"
       className="portfolio w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
