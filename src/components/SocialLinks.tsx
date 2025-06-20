@@ -2,8 +2,10 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import cv from "../assets/Abderahman_Haouit_CV.pdf";
 
 const SocialLinks: React.FC =() => {
+
   const links = [
     {
       id: 1,
@@ -43,9 +45,8 @@ const SocialLinks: React.FC =() => {
           CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/Abderahman_Haouit_CV.pdf",
+      href: cv,
       target: "_blank",
-      download: false,
     },
   ];
 
@@ -64,7 +65,6 @@ const SocialLinks: React.FC =() => {
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
-              // download={download}
               target={target}
               rel="noreferrer"
             >
