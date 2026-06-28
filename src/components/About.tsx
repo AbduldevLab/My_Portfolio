@@ -2,10 +2,57 @@ import React from "react";
 
 const About: React.FC = () => {
   const skills = [
-    { group: "Front-end", items: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Vite", "Bootstrap", "Tailwind CSS", "Web Components"] },
-    { group: "Back-end", items: ["Java", "Spring Boot", "Python", "Node.js", "API", "REST", "JWT"] },
-    { group: "Data & AI", items: ["Machine Learning", "XGBoost", "scikit-learn", "Pandas", "TILDA", "TensorFlow", "PyTorch", "Logistic Regression", "Multi-layer Perceptron", "Random Forest", "Bayesian inference", "Data Visualization", "Feature Engineering", "Hyperparameter Tuning", "Jupyter Notebook", "Weights & Biases"] },
-    { group: "Tools & Cloud", items: ["Azure DevOps", "Firebase", "GitHub Actions", "PostgreSQL", "Snowflake", "XPS", "XPGen", "Kubernetes", "Docker", "Yarn", "pnpm"] },
+    {
+      group: "Front-end",
+      items: [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Vite",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Web Components",
+      ],
+    },
+    {
+      group: "Back-end",
+      items: ["Java", "Spring Boot", "Python", "Node.js", "REST API", "JWT"],
+    },
+    {
+      group: "Data & AI",
+      items: [
+        "Machine Learning",
+        "XGBoost",
+        "scikit-learn",
+        "Pandas",
+        "TILDA",
+        "TensorFlow",
+        "PyTorch",
+        "Logistic Regression",
+        "Multi-layer Perceptron",
+        "Random Forest",
+        "SHAP",
+        "Feature Engineering",
+        "Hyperparameter Tuning",
+        "Jupyter Notebook",
+      ],
+    },
+    {
+      group: "Tools & Cloud",
+      items: [
+        "Azure DevOps",
+        "Firebase",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Snowflake",
+        "Kubernetes",
+        "Docker",
+        "Databricks",
+        "CI/CD",
+      ],
+    },
   ];
 
   return (
@@ -15,37 +62,69 @@ const About: React.FC = () => {
       className="about w-full py-24"
       style={{ background: "#0a0a0f" }}
     >
-      <div className="flex flex-col px-6 max-w-screen-lg mx-auto">
-        {/* Section label */}
+      <div className="flex flex-col px-4 sm:px-6 max-w-screen-lg mx-auto">
         <span
           className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
           style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
         >
-          <span style={{ width: 20, height: 1, background: "#6c63ff", display: "inline-block" }} />
+          <span
+            style={{
+              width: 20,
+              height: 1,
+              background: "#6c63ff",
+              display: "inline-block",
+            }}
+          />
           About
         </span>
 
         <h2
           className="text-white font-bold mb-10"
-          style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", letterSpacing: "-0.02em", lineHeight: 1.15 }}
+          style={{
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
+            letterSpacing: "-0.02em",
+            lineHeight: 1.15,
+          }}
         >
           A bit about me
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Bio */}
           <div style={{ color: "#7a7a90", fontSize: "1rem", lineHeight: 1.8 }}>
             <p>
-              I hold a <span style={{ color: "#f0f0f5", fontWeight: 500 }}>2:1 Honours BSc in Computer Science & Software Engineering</span> from Maynooth University, where I earned an 82% on my Final Year Project. I'm currently working as a{" "}
-              <span style={{ color: "#f0f0f5", fontWeight: 500 }}>Full-Stack Engineer at Northern Trust</span> on a rotational development programme as an associate, contributing to asset servicing microservices and asset management tech with GenAI R&D teams.
+              I hold a{" "}
+              <span style={{ color: "#f0f0f5", fontWeight: 500 }}>
+                2:1 Honours BSc in Computer Science & Software Engineering
+              </span>{" "}
+              from Maynooth University, where I earned 82% on my Final Year
+              Project. I'm currently working as a{" "}
+              <span style={{ color: "#f0f0f5", fontWeight: 500 }}>
+                Full-Stack Engineer at Northern Trust
+              </span>{" "}
+              on a rotational development programme, contributing to asset
+              servicing microservices and NTAM tech GenAI R&D.
             </p>
             <br />
             <p>
-              Alongside work, I'm graduating with a <span style={{ color: "#f0f0f5", fontWeight: 500 }}>MSc in Artificial Intelligence from the University of Limerick</span> (2024–2026). My thesis applies longitudinal machine learning to the Irish Longitudinal Study of Ageing (TILDA) dataset to predict chronic disease onset in older adults — achieving a 22% AUC improvement over the single-wave baseline with XGBoost.
+              Alongside work, I'm graduating with an{" "}
+              <span style={{ color: "#f0f0f5", fontWeight: 500 }}>
+                MSc in Artificial Intelligence (1:1) from the University of
+                Limerick
+              </span>{" "}
+              (2024–2026). My thesis applies longitudinal machine learning to
+              the Irish Longitudinal Study of Ageing (TILDA) dataset to predict
+              chronic disease onset in older Irish adults — achieving a 22% AUC
+              improvement over the single-wave baseline with XGBoost, with a
+              predicted thesis grade of 75%+.
             </p>
             <br />
             <p>
-              I'm drawn to problems where engineering and real-world impact to our day-to-day lives meet — particularly in health and well-being. Outside tech, I've travelled to 15+ countries and stay active through football and fitness.
+              I'm drawn to problems where engineering and real-world impact to
+              our day-to-day lives meet — particularly in health and well-being.
+              Outside tech, I've visited 15+ countries and stay active through
+              football and fitness.
             </p>
           </div>
 
@@ -54,12 +133,19 @@ const About: React.FC = () => {
             {skills.map(({ group, items }) => (
               <div key={group}>
                 <p
-                  style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#4a4a60", marginBottom: "0.6rem" }}
+                  style={{
+                    fontSize: "0.72rem",
+                    fontWeight: 600,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: "#4a4a60",
+                    marginBottom: "0.6rem",
+                  }}
                 >
                   {group}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {items.map(item => (
+                  {items.map((item) => (
                     <span
                       key={item}
                       style={{

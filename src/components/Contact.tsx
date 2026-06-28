@@ -21,18 +21,38 @@ const Contact: React.FC = () => {
           className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
           style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
         >
-          <span style={{ width: 20, height: 1, background: "#6c63ff", display: "inline-block" }} />
+          <span
+            style={{
+              width: 20,
+              height: 1,
+              background: "#6c63ff",
+              display: "inline-block",
+            }}
+          />
           Contact
         </span>
 
         <h2
           className="text-white font-bold mb-3"
-          style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", letterSpacing: "-0.02em", lineHeight: 1.15 }}
+          style={{
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
+            letterSpacing: "-0.02em",
+            lineHeight: 1.15,
+          }}
         >
           Let's build something together
         </h2>
-        <p style={{ color: "#7a7a90", marginBottom: "2.5rem", fontSize: "0.95rem", maxWidth: 460 }}>
-          I'm open to full-time roles, collaborations, and interesting side projects. Fill in the form or reach out directly.
+        <p
+          style={{
+            color: "#7a7a90",
+            marginBottom: "2.5rem",
+            fontSize: "0.95rem",
+            maxWidth: 460,
+          }}
+        >
+          I'm open to full-time roles, collaborations, and interesting side
+          projects. Fill in the form or reach out directly.
         </p>
 
         <div className="flex justify-center">
@@ -40,12 +60,18 @@ const Contact: React.FC = () => {
             onSubmit={handleSubmit}
             name="contact"
             method="POST"
-            action="https://getform.io/f/d3654820-08c6-438c-ba00-3965d1ef8b3b"
-            style={{ width: "100%", maxWidth: 480, display: "flex", flexDirection: "column", gap: "0.875rem" }}
+            action="https://forminit.com/f/asb87o3h6jy"
+            style={{
+              width: "100%",
+              maxWidth: 480,
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.875rem",
+            }}
           >
             <input
               type="text"
-              name="name"
+              name="fi-sender-fullName"
               placeholder="Your name"
               required
               style={{
@@ -58,12 +84,16 @@ const Contact: React.FC = () => {
                 outline: "none",
                 transition: "border-color 0.2s",
               }}
-              onFocus={e => { e.currentTarget.style.borderColor = "#6c63ff"; }}
-              onBlur={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = "#6c63ff";
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)";
+              }}
             />
             <input
               type="email"
-              name="email"
+              name="fi-sender-email"
               placeholder="Your email"
               required
               style={{
@@ -76,11 +106,15 @@ const Contact: React.FC = () => {
                 outline: "none",
                 transition: "border-color 0.2s",
               }}
-              onFocus={e => { e.currentTarget.style.borderColor = "#6c63ff"; }}
-              onBlur={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = "#6c63ff";
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)";
+              }}
             />
             <textarea
-              name="message"
+              name="fi-text-message"
               placeholder="Your message"
               rows={7}
               required
@@ -95,8 +129,12 @@ const Contact: React.FC = () => {
                 resize: "vertical",
                 transition: "border-color 0.2s",
               }}
-              onFocus={e => { e.currentTarget.style.borderColor = "#6c63ff"; }}
-              onBlur={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = "#6c63ff";
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)";
+              }}
             />
             <button
               type="submit"
@@ -113,8 +151,16 @@ const Contact: React.FC = () => {
                 transition: "transform 0.18s, box-shadow 0.18s",
                 alignSelf: "flex-start",
               }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(108,99,255,0.35)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "none"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.transform =
+                  "translateY(-2px)";
+                (e.currentTarget as HTMLElement).style.boxShadow =
+                  "0 8px 24px rgba(108,99,255,0.35)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.transform = "none";
+                (e.currentTarget as HTMLElement).style.boxShadow = "none";
+              }}
             >
               Send message →
             </button>
