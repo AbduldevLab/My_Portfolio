@@ -47,7 +47,7 @@ const Home: React.FC = () => {
           >
             {[
               { num: "+75%", label: "Thesis (predicted)" },
-              { num: "MSc", label: "AI — UL" },
+              { num: "MSc", label: "AI @ UL" },
               { num: "2+", label: "Years exp." },
             ].map(({ num, label }) => (
               <div key={label} style={{ background: "#111118", padding: "1.25rem 1rem", textAlign: "center" }}>
