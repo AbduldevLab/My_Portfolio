@@ -1,99 +1,108 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "portfolio",
-    },
-    {
-      id: 4,
-      link: "experience",
-    },
-    {
-      id: 5,
-      link: "education",
-    },
-    {
-      id: 6,
-      link: "contact",
-    },
+    { id: 1, link: "home", label: "Home" },
+    { id: 2, link: "about", label: "About" },
+    { id: 3, link: "portfolio", label: "Portfolio" },
+    { id: 4, link: "experience", label: "Experience" },
+    { id: 5, link: "education", label: "Education" },
+    { id: 6, link: "contact", label: "Contact" },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
-      <div>
-        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Rahul</a></h1> */}
-        <h1 className="text-5xl font-signature ml-2">
-          <Link
-            className="link-underline link-underline-black"
-            href="abdul"
-            target="_blank"
-            rel="noreferrer"
-            to="home"
-            smooth={true}
-            duration={500}
-            onClick={() => setNav(false)}
-            style={{ userSelect: "none" }}
-          >
-            Abder
-          </Link>
-        </h1>
-      </div>
+    <div
+      className="flex justify-between items-center w-full h-20 px-6 text-white fixed z-50 nav"
+      style={{
+        background: scrolled ? "rgba(10,10,15,0.92)" : "#0a0a0f",
+        backdropFilter: scrolled ? "blur(16px)" : "none",
+        borderBottom: "1px solid rgba(255,255,255,0.07)",
+        transition: "background 0.3s, backdrop-filter 0.3s",
+      }}
+    >
+      {/* Logo */}
+      <Link
+        to="home"
+        smooth
+        duration={500}
+        onClick={() => setNav(false)}
+        className="cursor-pointer select-none"
+        style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "1.4rem", fontWeight: 700, letterSpacing: "-0.02em" }}
+      >
+        Abder<span style={{ color: "#6c63ff" }}>.</span>
+      </Link>
 
-      <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
-          >
+      {/* Desktop nav */}
+      <ul className="hidden md:flex items-center gap-1">
+        {links.map(({ id, link, label }) => (
+          <li key={id}>
             <Link
               to={link}
               smooth
               duration={500}
-              style={{ userSelect: "none" }}
+              className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-medium capitalize"
+              style={{ color: "#7a7a90", transition: "color 0.2s, background 0.2s" }}
+              activeClass="active-nav-link"
+              spy={true}
+              onMouseEnter={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.color = "#f0f0f5"; (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.05)"; }}
+              onMouseLeave={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.color = "#7a7a90"; (e.currentTarget as HTMLElement).style.background = "transparent"; }}
             >
-              {link}
+              {label}
             </Link>
           </li>
         ))}
+        <li className="ml-2">
+          <Link
+            to="contact"
+            smooth
+            duration={500}
+            className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-semibold text-white"
+            style={{ background: "#6c63ff", transition: "opacity 0.2s" }}
+            onMouseEnter={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.opacity = "0.85"; }}
+            onMouseLeave={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
+          >
+            Hire me
+          </Link>
+        </li>
       </ul>
 
+      {/* Mobile toggle */}
       <div
         onClick={() => setNav(!nav)}
-        style={{ userSelect: "none" }}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-2 z-10 md:hidden select-none"
+        style={{ color: "#7a7a90" }}
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={26} /> : <FaBars size={26} />}
       </div>
 
+      {/* Mobile menu */}
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
-            >
+        <ul
+          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen"
+          style={{ background: "#0a0a0f" }}
+        >
+          {links.map(({ id, link, label }) => (
+            <li key={id} className="px-4 py-5 text-3xl font-semibold">
               <Link
-                onClick={() => setNav(!nav)}
-                style={{ userSelect: "none" }}
+                onClick={() => setNav(false)}
                 to={link}
                 smooth
                 duration={500}
+                className="cursor-pointer capitalize select-none"
+                style={{ color: "#7a7a90", fontFamily: "'Space Grotesk', sans-serif" }}
               >
-                {link}
+                {label}
               </Link>
             </li>
           ))}

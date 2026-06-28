@@ -1,58 +1,86 @@
 import React from "react";
 
 const About: React.FC = () => {
+  const skills = [
+    { group: "Front-end", items: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Vite", "Bootstrap", "Tailwind CSS", "Web Components"] },
+    { group: "Back-end", items: ["Java", "Spring Boot", "Python", "Node.js", "API", "REST", "JWT"] },
+    { group: "Data & AI", items: ["Machine Learning", "XGBoost", "scikit-learn", "Pandas", "TILDA", "TensorFlow", "PyTorch", "Logistic Regression", "Multi-layer Perceptron", "Random Forest", "Bayesian inference", "Data Visualization", "Feature Engineering", "Hyperparameter Tuning", "Jupyter Notebook", "Weights & Biases"] },
+    { group: "Tools & Cloud", items: ["Azure DevOps", "Firebase", "GitHub Actions", "PostgreSQL", "Snowflake", "XPS", "XPGen", "Kubernetes", "Docker", "Yarn", "pnpm"] },
+  ];
+
   return (
     <div
-      // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
+      // @ts-ignore
       name="about"
-      className="about w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="about w-full py-24"
+      style={{ background: "#0a0a0f" }}
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About Me
-          </p>
+      <div className="flex flex-col px-6 max-w-screen-lg mx-auto">
+        {/* Section label */}
+        <span
+          className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
+          style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
+        >
+          <span style={{ width: 20, height: 1, background: "#6c63ff", display: "inline-block" }} />
+          About
+        </span>
 
-          <p className="text-xl mt-5">
-            I hold a 2:1 Honours BSc in Computer Science & Software Engineering
-            from the National University of Ireland Maynooth, where I earned an
-            82% on my Final Year Project. Since graduating, I've continued to
-            grow professionally and academically—currently working as a Full
-            Stack Engineer at Northern Trust and pursuing a part-time MSc in
-            Artificial Intelligence at the University of Limerick.
-          </p>
+        <h2
+          className="text-white font-bold mb-10"
+          style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", letterSpacing: "-0.02em", lineHeight: 1.15 }}
+        >
+          A bit about me
+        </h2>
 
-          <br />
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Bio */}
+          <div style={{ color: "#7a7a90", fontSize: "1rem", lineHeight: 1.8 }}>
+            <p>
+              I hold a <span style={{ color: "#f0f0f5", fontWeight: 500 }}>2:1 Honours BSc in Computer Science & Software Engineering</span> from Maynooth University, where I earned an 82% on my Final Year Project. I'm currently working as a{" "}
+              <span style={{ color: "#f0f0f5", fontWeight: 500 }}>Full-Stack Engineer at Northern Trust</span> on a rotational development programme as an associate, contributing to asset servicing microservices and asset management tech with GenAI R&D teams.
+            </p>
+            <br />
+            <p>
+              Alongside work, I'm graduating with a <span style={{ color: "#f0f0f5", fontWeight: 500 }}>MSc in Artificial Intelligence from the University of Limerick</span> (2024–2026). My thesis applies longitudinal machine learning to the Irish Longitudinal Study of Ageing (TILDA) dataset to predict chronic disease onset in older adults — achieving a 22% AUC improvement over the single-wave baseline with XGBoost.
+            </p>
+            <br />
+            <p>
+              I'm drawn to problems where engineering and real-world impact to our day-to-day lives meet — particularly in health and well-being. Outside tech, I've travelled to 15+ countries and stay active through football and fitness.
+            </p>
+          </div>
 
-          <p className="text-xl">
-            My passion for technology began early on with a curiosity about how
-            things work. Over the years, this curiosity has grown into a
-            commitment to building practical, impactful solutions—particularly
-            in the areas of web, mobile, and AI development. I’m especially
-            fascinated by how the ever-evolving digital landscape can be used to
-            solve real-world problems.
-            <br />
-            <br />
-            I have hands-on experience using Java, spring boot, React, TypeScript to
-            develop full-stack web applications. I thrive on creating
-            dynamic and user-focused interfaces, and enjoy the challenge and
-            reward that come with solving technical problems. My academic and
-            industry work have also strengthened my algorithmic thinking and
-            problem-solving mindset.
-            <br />
-            <br />
-            AI and machine learning are central to where technology is headed,
-            and deepening my knowledge in these areas through both my
-            MSc and practical work. At the heart of it all, I’m driven by a
-            desire to use technology to make life easier and more efficient for
-            people especially when it comes to health and well-being.
-            <br />
-            <br />
-            Outside of tech, I love exploring new cultures and have traveled to
-            over 15 countries, each offering its own unique experiences. I’m also
-            passionate about football and staying active—whether it’s at the gym
-            or outdoors.
-          </p>
+          {/* Skills */}
+          <div className="flex flex-col gap-5">
+            {skills.map(({ group, items }) => (
+              <div key={group}>
+                <p
+                  style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#4a4a60", marginBottom: "0.6rem" }}
+                >
+                  {group}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {items.map(item => (
+                    <span
+                      key={item}
+                      style={{
+                        background: "#18181f",
+                        border: "1px solid rgba(255,255,255,0.07)",
+                        color: "#7a7a90",
+                        fontSize: "0.8rem",
+                        fontWeight: 500,
+                        padding: "0.28rem 0.75rem",
+                        borderRadius: 999,
+                        transition: "border-color 0.2s, color 0.2s",
+                        cursor: "default",
+                      }}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

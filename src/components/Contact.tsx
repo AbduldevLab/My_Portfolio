@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ContactFormElement extends HTMLFormElement {}
 
@@ -11,53 +11,112 @@ function handleSubmit(e: React.FormEvent<ContactFormElement>): void {
 const Contact: React.FC = () => {
   return (
     <div
-    // @ts-ignore: 'name' is not a standard HTML attribute, but used for react-scroll
+      // @ts-ignore
       name="contact"
-      className="contact w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="contact w-full py-24"
+      style={{ background: "#0a0a0f" }}
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
-          </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
-        </div>
+      <div className="flex flex-col px-6 max-w-screen-lg mx-auto">
+        <span
+          className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
+          style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
+        >
+          <span style={{ width: 20, height: 1, background: "#6c63ff", display: "inline-block" }} />
+          Contact
+        </span>
 
-        <div className=" flex justify-center items-center">
+        <h2
+          className="text-white font-bold mb-3"
+          style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", letterSpacing: "-0.02em", lineHeight: 1.15 }}
+        >
+          Let's build something together
+        </h2>
+        <p style={{ color: "#7a7a90", marginBottom: "2.5rem", fontSize: "0.95rem", maxWidth: 460 }}>
+          I'm open to full-time roles, collaborations, and interesting side projects. Fill in the form or reach out directly.
+        </p>
+
+        <div className="flex justify-center">
           <form
             onSubmit={handleSubmit}
             name="contact"
             method="POST"
             action="https://getform.io/f/d3654820-08c6-438c-ba00-3965d1ef8b3b"
-            className=" flex flex-col w-full md:w-1/2"
+            style={{ width: "100%", maxWidth: 480, display: "flex", flexDirection: "column", gap: "0.875rem" }}
           >
             <input
               type="text"
               name="name"
-              placeholder="Enter your name"
+              placeholder="Your name"
               required
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              style={{
+                padding: "0.75rem 1rem",
+                background: "#111118",
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: 8,
+                color: "#f0f0f5",
+                fontSize: "0.9rem",
+                outline: "none",
+                transition: "border-color 0.2s",
+              }}
+              onFocus={e => { e.currentTarget.style.borderColor = "#6c63ff"; }}
+              onBlur={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
             />
             <input
               type="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder="Your email"
               required
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              style={{
+                padding: "0.75rem 1rem",
+                background: "#111118",
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: 8,
+                color: "#f0f0f5",
+                fontSize: "0.9rem",
+                outline: "none",
+                transition: "border-color 0.2s",
+              }}
+              onFocus={e => { e.currentTarget.style.borderColor = "#6c63ff"; }}
+              onBlur={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
             />
             <textarea
               name="message"
-              placeholder="Enter your message"
-              rows={10}
+              placeholder="Your message"
+              rows={7}
               required
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            ></textarea>
-
+              style={{
+                padding: "0.75rem 1rem",
+                background: "#111118",
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: 8,
+                color: "#f0f0f5",
+                fontSize: "0.9rem",
+                outline: "none",
+                resize: "vertical",
+                transition: "border-color 0.2s",
+              }}
+              onFocus={e => { e.currentTarget.style.borderColor = "#6c63ff"; }}
+              onBlur={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+            />
             <button
               type="submit"
-              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+              style={{
+                marginTop: "0.5rem",
+                padding: "0.8rem 2rem",
+                background: "#6c63ff",
+                color: "#fff",
+                border: "none",
+                borderRadius: 8,
+                fontSize: "0.9rem",
+                fontWeight: 600,
+                cursor: "pointer",
+                transition: "transform 0.18s, box-shadow 0.18s",
+                alignSelf: "flex-start",
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(108,99,255,0.35)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "none"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
             >
-              Send Message
+              Send message →
             </button>
           </form>
         </div>

@@ -4,69 +4,49 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import cv from "../assets/Abderahman_Haouit_CV.pdf";
 
-const SocialLinks: React.FC =() => {
-
+const SocialLinks: React.FC = () => {
   const links = [
     {
       id: 1,
-      child: (
-        <>
-          LinkedIn <FaLinkedin size={30} />
-        </>
-      ),
+      child: <><FaLinkedin size={20} /> <span>LinkedIn</span></>,
       href: "https://www.linkedin.com/in/abder-h-244940193/",
       style: "rounded-tr-md",
-      download: false,
     },
     {
       id: 2,
-      child: (
-        <>
-          GitHub <FaGithub size={30} />
-        </>
-      ),
+      child: <><FaGithub size={20} /> <span>GitHub</span></>,
       href: "https://github.com/Abduldevlab",
-      download: false,
     },
     {
       id: 3,
-      child: (
-        <>
-          Email <HiOutlineMail size={30} />
-        </>
-      ),
+      child: <><HiOutlineMail size={20} /> <span>Email</span></>,
       href: "mailto:abdul01hd@yahoo.com",
-      download: false,
     },
     {
       id: 4,
-      child: (
-        <>
-          CV <BsFillPersonLinesFill size={30} />
-        </>
-      ),
+      child: <><BsFillPersonLinesFill size={20} /> <span>CV</span></>,
       href: cv,
       target: "_blank",
     },
   ];
 
   return (
-    <div className=" lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="lg:flex flex-col top-[35%] left-0 fixed z-40">
       <ul>
         {links.map(({ id, child, href, style, target }) => (
           <li
             key={id}
-            className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
-              style
-            }
+            className={`flex justify-between items-center w-36 h-12 px-4 ml-[-88px] hover:ml-[-10px] hover:rounded-md duration-300 ${style || ""}`}
+            style={{ background: "#18181f", border: "1px solid rgba(255,255,255,0.07)", borderLeft: "none", marginBottom: 2 }}
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-between items-center w-full gap-3 text-sm font-medium"
+              style={{ color: "#7a7a90", transition: "color 0.2s" }}
               target={target}
               rel="noreferrer"
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#f0f0f5"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "#7a7a90"; }}
             >
               {child}
             </a>
