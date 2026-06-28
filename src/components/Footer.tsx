@@ -11,7 +11,9 @@ const Footer: React.FC = () => {
         fontSize: "0.82rem",
       }}
     >
-      <span>© 2026 Abduldevlab - Built with React & TypeScript</span>
+      {/* <span>© 2026 Abduldevlab - Built with React & TypeScript</span> */}
+      <span>© {new Date().getFullYear()} Abduldevlab. Built with React and TypeScript</span>
+
     </div>
   );
 };
