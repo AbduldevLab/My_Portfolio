@@ -51,6 +51,7 @@ body {
 .contact {
   margin-top: 5%;
 }
+
 .experience {
   margin-top: 5%;
 }
@@ -58,6 +59,7 @@ body {
 .education {
   margin-top: 8%;
 }
+
 /* .experience {
   margin-top: 8%;
 } */
@@ -101,6 +103,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .card__info {
   display: flex;
   flex-wrap: wrap;
@@ -119,12 +122,10 @@ body {
 
 @media screen and (max-width: 768px) {
   #root {
-    background: linear-gradient(
-      rgb(31, 41, 55) 20%,
-      black 20%,
-      rgb(31, 41, 55) 65%,
-      black 25%
-    );
+    background: linear-gradient(rgb(31, 41, 55) 20%,
+        black 20%,
+        rgb(31, 41, 55) 65%,
+        black 25%);
     min-height: 100vh;
   }
 
@@ -176,6 +177,7 @@ body {
     padding-right: 1rem;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .experience {
     padding-top: 10rem;

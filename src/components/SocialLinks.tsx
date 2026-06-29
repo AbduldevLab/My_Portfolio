@@ -57,10 +57,16 @@ const SocialLinks: React.FC = () => {
                 style={{ color: "#7a7a90", transition: "color 0.2s" }}
                 target={target}
                 rel="noreferrer"
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#f0f0f5"; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "#7a7a90"; }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = "#f0f0f5";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = "#7a7a90";
+                }}
               >
-                <span style={{ fontSize: "0.82rem", whiteSpace: "nowrap" }}>{label}</span>
+                <span style={{ fontSize: "0.82rem", whiteSpace: "nowrap" }}>
+                  {label}
+                </span>
                 {icon}
               </a>
             </li>
@@ -86,9 +92,18 @@ const SocialLinks: React.FC = () => {
             target={target}
             rel="noreferrer"
             className="flex flex-col items-center justify-center gap-1 flex-1 h-full"
-            style={{ color: "#7a7a90", transition: "color 0.2s", fontSize: "0.6rem", fontWeight: 500 }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#6c63ff"; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "#7a7a90"; }}
+            style={{
+              color: "#7a7a90",
+              transition: "color 0.2s",
+              fontSize: "0.6rem",
+              fontWeight: 500,
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.color = "#6c63ff";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.color = "#7a7a90";
+            }}
           >
             {icon}
             <span>{label}</span>

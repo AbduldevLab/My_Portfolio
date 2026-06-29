@@ -13,12 +13,12 @@ const NavBar: React.FC = () => {
   }, []);
 
   const links = [
-    { id: 1, link: "home",       label: "Home" },
-    { id: 2, link: "about",      label: "About" },
-    { id: 3, link: "portfolio",  label: "Portfolio" },
+    { id: 1, link: "home", label: "Home" },
+    { id: 2, link: "about", label: "About" },
+    { id: 3, link: "portfolio", label: "Portfolio" },
     { id: 4, link: "experience", label: "Experience" },
-    { id: 5, link: "education",  label: "Education" },
-    { id: 6, link: "contact",    label: "Contact" },
+    { id: 5, link: "education", label: "Education" },
+    { id: 6, link: "contact", label: "Contact" },
   ];
 
   return (
@@ -38,7 +38,12 @@ const NavBar: React.FC = () => {
         duration={500}
         onClick={() => setNav(false)}
         className="cursor-pointer select-none"
-        style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "1.4rem", fontWeight: 700, letterSpacing: "-0.02em" }}
+        style={{
+          fontFamily: "'Space Grotesk', sans-serif",
+          fontSize: "1.4rem",
+          fontWeight: 700,
+          letterSpacing: "-0.02em",
+        }}
       >
         Abder<span style={{ color: "#6c63ff" }}>.</span>
       </Link>
@@ -54,14 +59,19 @@ const NavBar: React.FC = () => {
               spy={true}
               activeClass="active-nav-link"
               className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-medium capitalize"
-              style={{ color: "#7a7a90", transition: "color 0.2s, background 0.2s" }}
+              style={{
+                color: "#7a7a90",
+                transition: "color 0.2s, background 0.2s",
+              }}
               onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
                 (e.currentTarget as HTMLElement).style.color = "#f0f0f5";
-                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.05)";
+                (e.currentTarget as HTMLElement).style.background =
+                  "rgba(255,255,255,0.05)";
               }}
               onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
                 (e.currentTarget as HTMLElement).style.color = "#7a7a90";
-                (e.currentTarget as HTMLElement).style.background = "transparent";
+                (e.currentTarget as HTMLElement).style.background =
+                  "transparent";
               }}
             >
               {label}
@@ -75,8 +85,12 @@ const NavBar: React.FC = () => {
             duration={500}
             className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-semibold text-white"
             style={{ background: "#6c63ff", transition: "opacity 0.2s" }}
-            onMouseEnter={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.opacity = "0.85"; }}
-            onMouseLeave={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
+            onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
+              (e.currentTarget as HTMLElement).style.opacity = "0.85";
+            }}
+            onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
+              (e.currentTarget as HTMLElement).style.opacity = "1";
+            }}
           >
             Coffee Chat
           </Link>
@@ -106,7 +120,10 @@ const NavBar: React.FC = () => {
                 smooth
                 duration={500}
                 className="cursor-pointer capitalize select-none"
-                style={{ color: "#7a7a90", fontFamily: "'Space Grotesk', sans-serif" }}
+                style={{
+                  color: "#7a7a90",
+                  fontFamily: "'Space Grotesk', sans-serif",
+                }}
               >
                 {label}
               </Link>

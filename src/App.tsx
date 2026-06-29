@@ -8,9 +8,9 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Education from "./components/Education";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
     <div>
       <NavBar />
@@ -18,12 +18,12 @@ const App:React.FC = () => {
       <About />
       <Portfolio />
       <Experience />
-      <Education/>
+      <Education />
       <Contact />
       <Footer />
       <SocialLinks />
     </div>
   );
-}
+};
 
 export default App;
