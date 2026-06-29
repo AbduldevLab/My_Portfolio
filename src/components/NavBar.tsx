@@ -13,12 +13,12 @@ const NavBar: React.FC = () => {
   }, []);
 
   const links = [
-    { id: 1, link: "home", label: "Home" },
-    { id: 2, link: "about", label: "About" },
-    { id: 3, link: "portfolio", label: "Portfolio" },
+    { id: 1, link: "home",       label: "Home" },
+    { id: 2, link: "about",      label: "About" },
+    { id: 3, link: "portfolio",  label: "Portfolio" },
     { id: 4, link: "experience", label: "Experience" },
-    { id: 5, link: "education", label: "Education" },
-    { id: 6, link: "contact", label: "Contact" },
+    { id: 5, link: "education",  label: "Education" },
+    { id: 6, link: "contact",    label: "Contact" },
   ];
 
   return (
@@ -31,24 +31,19 @@ const NavBar: React.FC = () => {
         transition: "background 0.3s, backdrop-filter 0.3s",
       }}
     >
-      {/* Logo */}
+      {/* Logo — scrolls to top and updates URL */}
       <Link
         to="home"
         smooth
         duration={500}
         onClick={() => setNav(false)}
         className="cursor-pointer select-none"
-        style={{
-          fontFamily: "'Space Grotesk', sans-serif",
-          fontSize: "1.4rem",
-          fontWeight: 700,
-          letterSpacing: "-0.02em",
-        }}
+        style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "1.4rem", fontWeight: 700, letterSpacing: "-0.02em" }}
       >
         Abder<span style={{ color: "#6c63ff" }}>.</span>
       </Link>
 
-      {/* Desktop nav */}
+      {/* Desktop links */}
       <ul className="hidden md:flex items-center gap-1">
         {links.map(({ id, link, label }) => (
           <li key={id}>
@@ -56,22 +51,17 @@ const NavBar: React.FC = () => {
               to={link}
               smooth
               duration={500}
-              className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-medium capitalize"
-              style={{
-                color: "#7a7a90",
-                transition: "color 0.2s, background 0.2s",
-              }}
-              activeClass="active-nav-link"
               spy={true}
+              activeClass="active-nav-link"
+              className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-medium capitalize"
+              style={{ color: "#7a7a90", transition: "color 0.2s, background 0.2s" }}
               onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
                 (e.currentTarget as HTMLElement).style.color = "#f0f0f5";
-                (e.currentTarget as HTMLElement).style.background =
-                  "rgba(255,255,255,0.05)";
+                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.05)";
               }}
               onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
                 (e.currentTarget as HTMLElement).style.color = "#7a7a90";
-                (e.currentTarget as HTMLElement).style.background =
-                  "transparent";
+                (e.currentTarget as HTMLElement).style.background = "transparent";
               }}
             >
               {label}
@@ -85,12 +75,8 @@ const NavBar: React.FC = () => {
             duration={500}
             className="cursor-pointer select-none px-4 py-2 rounded-lg text-sm font-semibold text-white"
             style={{ background: "#6c63ff", transition: "opacity 0.2s" }}
-            onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
-              (e.currentTarget as HTMLElement).style.opacity = "0.85";
-            }}
-            onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
-              (e.currentTarget as HTMLElement).style.opacity = "1";
-            }}
+            onMouseEnter={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.opacity = "0.85"; }}
+            onMouseLeave={(e: React.MouseEvent<HTMLElement>) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
           >
             Coffee Chat
           </Link>
@@ -110,7 +96,7 @@ const NavBar: React.FC = () => {
       {nav && (
         <ul
           className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen"
-          style={{ background: "#0a0a0f" }}
+          style={{ background: "#0a0a0f", zIndex: 49 }}
         >
           {links.map(({ id, link, label }) => (
             <li key={id} className="px-4 py-5 text-3xl font-semibold">
@@ -120,10 +106,7 @@ const NavBar: React.FC = () => {
                 smooth
                 duration={500}
                 className="cursor-pointer capitalize select-none"
-                style={{
-                  color: "#7a7a90",
-                  fontFamily: "'Space Grotesk', sans-serif",
-                }}
+                style={{ color: "#7a7a90", fontFamily: "'Space Grotesk', sans-serif" }}
               >
                 {label}
               </Link>

@@ -57,6 +57,9 @@ importers:
         specifier: ^2.1.4
         version: 2.1.4
     devDependencies:
+      '@types/css':
+        specifier: ^0.0.38
+        version: 0.0.38
       '@types/node':
         specifier: ^24.2.1
         version: 24.8.0
@@ -1378,6 +1381,9 @@ packages:
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
+
+  '@types/css@0.0.38':
+    resolution: {integrity: sha512-FsAy4pBnrJb8qdKmIyDy582o4Xt8pHwpCwYRmIvXw4dslA7C4436oOM+8XNnMEsV/LSculbFNaZsBZmycDjARw==}
 
   '@types/eslint-scope@3.7.7':
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
@@ -7540,6 +7546,8 @@ snapshots:
   '@types/connect@3.4.38':
     dependencies:
       '@types/node': 24.8.0
+
+  '@types/css@0.0.38': {}
 
   '@types/eslint-scope@3.7.7':
     dependencies:
