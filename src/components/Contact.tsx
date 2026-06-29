@@ -2,13 +2,13 @@ import React from "react";
 
 interface ContactFormElement extends HTMLFormElement {}
 
-function handleSubmit(e: React.FormEvent<ContactFormElement>): void {
+function handleSubmit(e: React.FormEvent<ContactFormElement>): void {// Prevent the default form submission behavior 
   setTimeout(() => {
     e.currentTarget.reset();
   }, 3000);
 }
 
-const Contact: React.FC = () => {
+const Contact: React.FC = () => { // Contact form component
   return (
     <div
       // @ts-ignore

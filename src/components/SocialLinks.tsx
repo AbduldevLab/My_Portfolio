@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import cv from "../assets/Abderahman_Haouit_CV.pdf";
 
-const SocialLinks: React.FC = () => {
+const SocialLinks: React.FC = () => {// SocialLinks component displaying social media links with responsive design 
   const links = [
     {
       id: 1,

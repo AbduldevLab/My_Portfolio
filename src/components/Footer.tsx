@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer: React.FC = () => {
+const Footer: React.FC = () => { // Footer component displaying copyright information
   return (
     <div
       className="text-center p-6"

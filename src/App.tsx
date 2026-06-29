@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { BrowserRouter, useNavigate } from "react-router-dom";
 
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -10,7 +11,36 @@ import SocialLinks from "./components/SocialLinks";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 
-const App: React.FC = () => {
+const SECTIONS = ["home", "about", "portfolio", "experience", "education", "contact"];
+
+const AppContent: React.FC = () => {// Main application content component that includes all sections and handles navigation based on scroll position
+  const navigate = useNavigate();
+  const current = useRef("");
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];// Array to hold IntersectionObserver instances
+
+    SECTIONS.forEach((id) => {// Iterate through each section to set up IntersectionObserver
+      const el = document.querySelector(`[name="${id}"]`);
+      if (!el) return;
+
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && current.current !== id) {// Check if the section is intersecting and if it's different from the current section
+            current.current = id;
+            navigate(id === "home" ? "/" : `/${id}`, { replace: true });// Update the URL based on the current section
+          }
+        },
+        { threshold: 0.4 }
+      );
+
+      obs.observe(el);
+      observers.push(obs);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());// Clean up observers on component unmount
+  }, [navigate]);
+
   return (
     <div>
       <NavBar />
@@ -25,5 +55,11 @@ const App: React.FC = () => {
     </div>
   );
 };
+
+const App: React.FC = () => (// Main application component that wraps the content with BrowserRouter for routing
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
+);
 
 export default App;

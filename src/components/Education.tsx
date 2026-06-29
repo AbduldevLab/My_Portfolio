@@ -3,7 +3,7 @@ import ul from "../assets/UL.jpg";
 import mu from "../assets/MU.jpg";
 import riversdale from "../assets/riversdale.jpg";
 
-const Education: React.FC = () => {
+const Education: React.FC = () => { // Academic background component
   const degrees = [
     {
       id: 1,

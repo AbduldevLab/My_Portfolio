@@ -7,7 +7,7 @@ import targetLocation from "../assets/portfolio/targetlocation.jpg";
 import WeatherApp from "../assets/portfolio/weatherApp.png";
 import thesis from "../assets/portfolio/thesis.png";
 
-const Portfolio: React.FC = () => {
+const Portfolio: React.FC = () => {// Portfolio component displaying recent projects with details and links
   const portfolios = [
     {
       id: 1,

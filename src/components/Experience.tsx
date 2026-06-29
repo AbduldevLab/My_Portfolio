@@ -14,7 +14,7 @@ import brainnest from "../assets/brainnest.png";
 import valeo from "../assets/valeo.png";
 import meta from "../assets/meta.jpg";
 
-const sectionLabel = (text: string) => (
+const sectionLabel = (text: string) => (// Reusable component for section labels 
   <div className="mb-8">
     <span
       className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
@@ -33,7 +33,7 @@ const sectionLabel = (text: string) => (
   </div>
 );
 
-const Experience: React.FC = () => {
+const Experience: React.FC = () => { // Experience component displaying skills and work history
   const techs = [
     { id: 1, src: html, title: "HTML", color: "#f97316" },
     { id: 2, src: css, title: "CSS", color: "#3b82f6" },

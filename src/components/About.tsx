@@ -1,6 +1,6 @@
 import React from "react";
 
-const About: React.FC = () => {
+const About: React.FC = () => {// Skills grouped by category 
   const skills = [
     {
       group: "Front-end",
