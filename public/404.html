@@ -1,10 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <title>Abder.</title>
     <script>
-      location.replace("./index.html");
+      // GitHub Pages 404 redirect trick for SPAs
+      // Saves the path into sessionStorage then redirects to the root
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      // Strip the repo basename so we only store the sub-path
+      var base = "/My_Portfolio";
+      var subPath = path.startsWith(base) ? path.slice(base.length) : path;
+      sessionStorage.setItem("spa_redirect", subPath + search + hash);
+      window.location.replace("/My_Portfolio/");
     </script>
   </head>
   <body></body>

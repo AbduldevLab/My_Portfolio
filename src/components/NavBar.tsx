@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {// Navigation bar component with responsive desi
   ];
 
   const handleNav = (section: string) => {// Handle navigation to different sections of the page
-    // navigate(section === "home" ? "/" : `/${section}`, { replace: true });
+    navigate(section === "home" ? "/" : `/${section}`, { replace: true });
     scroller.scrollTo(section, { smooth: true, duration: 500 });
     setNav(false);
   };

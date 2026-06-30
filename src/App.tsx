@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import { BrowserRouter, useNavigate } from "react-router-dom";
+import { BrowserRouter, useNavigate, useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -15,8 +16,23 @@ const SECTIONS = ["home", "about", "portfolio", "experience", "education", "cont
 
 const AppContent: React.FC = () => {// Main application content component that includes all sections and handles navigation based on scroll position
   const navigate = useNavigate();
+  const location = useLocation();
   const current = useRef("");
 
+  // On first load: if the URL is /about, /portfolio etc., scroll to that section
+  useEffect(() => {
+    const path = location.pathname.replace("/", "").replace(/\/$/, "");
+    const section = SECTIONS.includes(path) ? path : "home";
+    if (section !== "home") {
+      // Small delay to let the page render before scrolling
+      setTimeout(() => {
+        scroller.scrollTo(section, { smooth: true, duration: 600 });
+      }, 150);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // run once on mount only
+
+  // IntersectionObserver: update URL as user scrolls
   useEffect(() => {
     const observers: IntersectionObserver[] = [];// Array to hold IntersectionObserver instances
 
@@ -28,7 +44,7 @@ const AppContent: React.FC = () => {// Main application content component that i
         ([entry]) => {
           if (entry.isIntersecting && current.current !== id) {// Check if the section is intersecting and if it's different from the current section
             current.current = id;
-            // navigate(id === "home" ? "/" : `/${id}`, { replace: true });// Update the URL based on the current section
+            navigate(id === "home" ? "/" : `/${id}`, { replace: true });// Update the URL based on the current section
           }
         },
         { threshold: 0.4 }
