@@ -57,7 +57,7 @@ const AppContent: React.FC = () => {// Main application content component that i
 };
 
 const App: React.FC = () => (// Main application component that wraps the content with BrowserRouter for routing
-  <BrowserRouter>
+  <BrowserRouter basename="/My_Portfolio">
     <AppContent />
   </BrowserRouter>
 );
