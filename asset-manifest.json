@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My_Portfolio/static/css/main.b38a4ec7.css",
-    "main.js": "/My_Portfolio/static/js/main.75b94846.js",
+    "main.js": "/My_Portfolio/static/js/main.99005501.js",
     "static/media/kake.PNG": "/My_Portfolio/static/media/kake.5cb9c25448873a642cc1.PNG",
     "static/media/weatherApp.png": "/My_Portfolio/static/media/weatherApp.82196f7e43132536501e.png",
     "static/media/Abderahman_Haouit_CV.pdf": "/My_Portfolio/static/media/Abderahman_Haouit_CV.0f96812985752bcb0503.pdf",
@@ -24,10 +24,10 @@
     "static/media/javascript.png": "/My_Portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/My_Portfolio/index.html",
     "main.b38a4ec7.css.map": "/My_Portfolio/static/css/main.b38a4ec7.css.map",
-    "main.75b94846.js.map": "/My_Portfolio/static/js/main.75b94846.js.map"
+    "main.99005501.js.map": "/My_Portfolio/static/js/main.99005501.js.map"
   },
   "entrypoints": [
     "static/css/main.b38a4ec7.css",
-    "static/js/main.75b94846.js"
+    "static/js/main.99005501.js"
   ]
 }
