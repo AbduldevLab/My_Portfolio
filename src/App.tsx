@@ -28,7 +28,7 @@ const AppContent: React.FC = () => {// Main application content component that i
         ([entry]) => {
           if (entry.isIntersecting && current.current !== id) {// Check if the section is intersecting and if it's different from the current section
             current.current = id;
-            navigate(id === "home" ? "/" : `/${id}`, { replace: true });// Update the URL based on the current section
+            // navigate(id === "home" ? "/" : `/${id}`, { replace: true });// Update the URL based on the current section
           }
         },
         { threshold: 0.4 }
