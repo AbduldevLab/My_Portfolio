@@ -80,14 +80,7 @@ const Education: React.FC = () => { // Academic background component
           className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
           style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
         >
-          <span
-            style={{
-              width: 20,
-              height: 1,
-              background: "#6c63ff",
-              display: "inline-block",
-            }}
-          />
+          <span style={{ width: 20, height: 1, background: "#6c63ff", display: "inline-block" }} />
           Education
         </span>
 
@@ -105,136 +98,66 @@ const Education: React.FC = () => { // Academic background component
 
         {/* Degrees */}
         <div className="flex flex-col gap-4 mb-12">
-          {degrees.map(
-            ({ id, period, degree, school, grade, detail, accent, img }) => (
-              <div
-                key={id}
-                style={{
-                  background: "#111118",
-                  border: "1px solid rgba(255,255,255,0.07)",
-                  borderRadius: 12,
-                  padding: "1.25rem",
-                }}
-              >
-                <div className="flex items-start gap-4">
-                  {/* School logo */}
-                  <div
+          {degrees.map(({ id, period, degree, school, grade, detail, accent, img }) => (
+            <div
+              key={id}
+              style={{ background: "#111118", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, padding: "1.25rem" }}
+            >
+              <div className="flex items-start gap-4">
+                {/* School logo */}
+                <div
+                  style={{
+                    width: 48, height: 48, borderRadius: 8, overflow: "hidden",
+                    flexShrink: 0, border: `1px solid ${accent}44`, background: accent + "11",
+                  }}
+                >
+                  {img ? (
+                    <img src={img} alt={school} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  ) : (
+                    <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.3rem" }}>
+                      🏫
+                    </div>
+                  )}
+                </div>
+                <div style={{ flex: 1, minWidth: 0, textAlign: "left" }}>
+                  <p
                     style={{
-                      width: 48,
-                      height: 48,
-                      borderRadius: 8,
-                      overflow: "hidden",
-                      flexShrink: 0,
-                      border: `1px solid ${accent}44`,
-                      background: accent + "11",
+                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontWeight: 600,
+                      fontSize: "0.95rem",
+                      color: "#f0f0f5",
+                      textAlign: "left",
                     }}
                   >
-                    {img ? (
-                      <img
-                        src={img}
-                        alt={school}
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                        }}
-                      />
-                    ) : (
-                      <div
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          fontSize: "1.3rem",
-                        }}
-                      >
-                        🏫
-                      </div>
+                    {degree}
+                  </p>
+                  <p style={{ fontSize: "0.82rem", color: "#7a7a90", marginTop: 2, textAlign: "left" }}>
+                    {school}
+                  </p>
+                  <p style={{ fontSize: "0.75rem", fontWeight: 500, marginTop: 4, textAlign: "left" }}>
+                    <span style={{ color: "#4a4a60" }}>{period}</span>
+                    {grade && (
+                      <>
+                        <span style={{ color: "#4a4a60" }}>  ·  </span>
+                        <span style={{ color: accent, fontWeight: 600 }}>{grade}</span>
+                      </>
                     )}
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div className="flex flex-wrap justify-between gap-x-3 gap-y-1">
-                      <div style={{ minWidth: 0 }}>
-                        <p
-                          style={{
-                            fontFamily: "'Space Grotesk', sans-serif",
-                            fontWeight: 600,
-                            fontSize: "0.95rem",
-                            color: "#f0f0f5",
-                          }}
-                        >
-                          {degree}
-                        </p>
-                        <p
-                          style={{
-                            fontSize: "0.82rem",
-                            color: "#7a7a90",
-                            marginTop: 2,
-                          }}
-                        >
-                          {school}
-                        </p>
-                      </div>
-                      <div style={{ textAlign: "right", flexShrink: 0 }}>
-                        <span
-                          style={{
-                            fontSize: "0.75rem",
-                            color: "#4a4a60",
-                            fontWeight: 500,
-                            display: "block",
-                          }}
-                        >
-                          {period}
-                        </span>
-                        {grade && (
-                          <span
-                            style={{
-                              fontSize: "0.72rem",
-                              color: accent,
-                              fontWeight: 600,
-                              display: "block",
-                              marginTop: 2,
-                            }}
-                          >
-                            {grade}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    {detail && (
-                      <p
-                        style={{
-                          fontSize: "0.82rem",
-                          color: "#7a7a90",
-                          lineHeight: 1.6,
-                          marginTop: "0.6rem",
-                        }}
-                      >
-                        {detail}
-                      </p>
-                    )}
-                  </div>
+                  </p>
+                  {detail && (
+                    <p style={{ fontSize: "0.82rem", color: "#7a7a90", lineHeight: 1.6, marginTop: "0.6rem", textAlign: "left" }}>
+                      {detail}
+                    </p>
+                  )}
                 </div>
               </div>
-            ),
-          )}
+            </div>
+          ))}
         </div>
 
         {/* Certs & extras */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <p
-              style={{
-                color: "#4a4a60",
-                fontSize: "0.72rem",
-                fontWeight: 600,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                marginBottom: "1rem",
-              }}
-            >
+            <p style={{ color: "#4a4a60", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
               Certifications
             </p>
             <div className="flex flex-col gap-2">
@@ -244,7 +167,7 @@ const Education: React.FC = () => { // Academic background component
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
-                    alignItems: "center",
+                    alignItems: "flex-start",
                     padding: "0.65rem 1rem",
                     background: "#111118",
                     borderRadius: 8,
@@ -252,44 +175,33 @@ const Education: React.FC = () => { // Academic background component
                     gap: "0.5rem",
                   }}
                 >
-                  <div style={{ minWidth: 0 }}>
+                  <div style={{ minWidth: 0, textAlign: "left" }}>
                     {url ? (
                       <a
                         href={url}
                         target="_blank"
                         rel="noreferrer"
                         style={{
+                          display: "block",
                           fontSize: "0.85rem",
                           fontWeight: 500,
                           color: "#f0f0f5",
                           textDecoration: "underline",
+                          textAlign: "left",
                         }}
                       >
                         {name}
                       </a>
                     ) : (
-                      <p
-                        style={{
-                          fontSize: "0.85rem",
-                          fontWeight: 500,
-                          color: "#f0f0f5",
-                        }}
-                      >
+                      <p style={{ fontSize: "0.85rem", fontWeight: 500, color: "#f0f0f5", textAlign: "left" }}>
                         {name}
                       </p>
                     )}
-                    <p style={{ fontSize: "0.72rem", color: "#4a4a60" }}>
+                    <p style={{ fontSize: "0.72rem", color: "#4a4a60", marginTop: 2, textAlign: "left" }}>
                       {issuer}
                     </p>
                   </div>
-                  <span
-                    style={{
-                      fontSize: "0.72rem",
-                      color: "#4a4a60",
-                      fontWeight: 500,
-                      flexShrink: 0,
-                    }}
-                  >
+                  <span style={{ fontSize: "0.72rem", color: "#4a4a60", fontWeight: 500, flexShrink: 0 }}>
                     {year}
                   </span>
                 </div>
@@ -300,35 +212,12 @@ const Education: React.FC = () => { // Academic background component
           <div className="flex flex-col gap-6">
             {extras.map(({ label, items }) => (
               <div key={label}>
-                <p
-                  style={{
-                    color: "#4a4a60",
-                    fontSize: "0.72rem",
-                    fontWeight: 600,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    marginBottom: "0.75rem",
-                  }}
-                >
+                <p style={{ color: "#4a4a60", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
                   {label}
                 </p>
-                <div
-                  style={{
-                    background: "#111118",
-                    borderRadius: 8,
-                    border: "1px solid rgba(255,255,255,0.07)",
-                    padding: "0.8rem 1rem",
-                  }}
-                >
+                <div style={{ background: "#111118", borderRadius: 8, border: "1px solid rgba(255,255,255,0.07)", padding: "0.8rem 1rem" }}>
                   {items.map((item) => (
-                    <p
-                      key={item}
-                      style={{
-                        fontSize: "0.83rem",
-                        color: "#7a7a90",
-                        lineHeight: 1.7,
-                      }}
-                    >
+                    <p key={item} style={{ fontSize: "0.83rem", color: "#7a7a90", lineHeight: 1.7, textAlign: "left" }}>
                       · {item}
                     </p>
                   ))}

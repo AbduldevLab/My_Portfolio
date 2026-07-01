@@ -14,26 +14,7 @@ import brainnest from "../assets/brainnest.png";
 import valeo from "../assets/valeo.png";
 import meta from "../assets/meta.jpg";
 
-const sectionLabel = (text: string) => (// Reusable component for section labels 
-  <div className="mb-8">
-    <span
-      className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
-      style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
-    >
-      <span
-        style={{
-          width: 20,
-          height: 1,
-          background: "#6c63ff",
-          display: "inline-block",
-        }}
-      />
-      {text}
-    </span>
-  </div>
-);
-
-const Experience: React.FC = () => { // Experience component displaying skills and work history
+const Experience: React.FC = () => {
   const techs = [
     { id: 1, src: html, title: "HTML", color: "#f97316" },
     { id: 2, src: css, title: "CSS", color: "#3b82f6" },
@@ -211,7 +192,7 @@ const Experience: React.FC = () => { // Experience component displaying skills a
       className="experience w-full py-24"
       style={{ background: "#0a0a0f" }}
     >
-      <div className="flex flex-col px-6 max-w-screen-lg mx-auto">
+      <div className="flex flex-col px-4 sm:px-6 max-w-screen-lg mx-auto">
         <span
           className="inline-flex items-center gap-2 text-xs font-semibold uppercase mb-4"
           style={{ color: "#6c63ff", letterSpacing: "0.12em" }}
@@ -369,41 +350,48 @@ const Experience: React.FC = () => { // Experience component displaying skills a
                       </span>
                     </div>
                   )}
-                  <div style={{ flex: 1 }}>
-                    <div className="flex flex-wrap justify-between gap-1">
-                      <div>
-                        <p
-                          style={{
-                            fontFamily: "'Space Grotesk', sans-serif",
-                            fontWeight: 600,
-                            fontSize: "0.95rem",
-                            color: "#f0f0f5",
-                          }}
-                        >
-                          {role}
-                        </p>
-                        <p
-                          style={{
-                            fontSize: "0.82rem",
-                            color: "#7a7a90",
-                            marginTop: 2,
-                          }}
-                        >
-                          {company} · {location}
-                        </p>
-                      </div>
-                      <span
-                        style={{
-                          fontSize: "0.75rem",
-                          color: "#4a4a60",
-                          fontWeight: 500,
-                          whiteSpace: "nowrap",
-                        }}
-                      >
-                        {duration}
-                      </span>
-                    </div>
-                    <ul style={{ marginTop: "0.75rem" }}>
+                  <div style={{ flex: 1, minWidth: 0, textAlign: "left" }}>
+                    <p
+                      style={{
+                        fontFamily: "'Space Grotesk', sans-serif",
+                        fontWeight: 600,
+                        fontSize: "0.95rem",
+                        color: "#f0f0f5",
+                        textAlign: "left",
+                      }}
+                    >
+                      {role}
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "0.82rem",
+                        color: "#7a7a90",
+                        marginTop: 2,
+                        textAlign: "left",
+                      }}
+                    >
+                      {company} · {location}
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "0.75rem",
+                        color: "#4a4a60",
+                        fontWeight: 500,
+                        marginTop: 4,
+                        textAlign: "left",
+                      }}
+                    >
+                      {duration}
+                    </p>
+
+                    <ul
+                      style={{
+                        listStyle: "none",
+                        margin: "0.75rem 0 0 0",
+                        padding: 0,
+                        textAlign: "left",
+                      }}
+                    >
                       {bullets.map((b, i) => (
                         <li
                           key={i}
@@ -413,6 +401,7 @@ const Experience: React.FC = () => { // Experience component displaying skills a
                             lineHeight: 1.65,
                             paddingLeft: "1rem",
                             position: "relative",
+                            textAlign: "left",
                           }}
                         >
                           <span
