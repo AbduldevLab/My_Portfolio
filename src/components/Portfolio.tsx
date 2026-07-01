@@ -93,7 +93,7 @@ const Portfolio: React.FC = () => {// Portfolio component displaying recent proj
     <div
       // @ts-ignore
       name="portfolio"
-      className="portfolio w-full py-24"
+      className="w-full py-24"
       style={{ background: "#0a0a0f" }}
     >
       <div className="flex flex-col px-4 sm:px-6 max-w-screen-lg mx-auto">
@@ -391,7 +391,7 @@ const Portfolio: React.FC = () => {// Portfolio component displaying recent proj
                   </div>
                 </div>
               </div>
-            ),
+            )
           )}
         </div>
       </div>

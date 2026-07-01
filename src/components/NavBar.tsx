@@ -89,12 +89,13 @@ const NavBar: React.FC = () => {// Navigation bar component with responsive desi
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-2 z-10 md:hidden select-none"
-        style={{ color: "#7a7a90" }}
+        className="cursor-pointer pr-2 md:hidden select-none"
+        style={{ color: "#7a7a90", position: "relative", zIndex: 60 }}
       >
         {nav ? <FaTimes size={26} /> : <FaBars size={26} />}
       </div>
 
+      {/* Mobile full-screen menu */}
       {nav && (
         <ul
           className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen"

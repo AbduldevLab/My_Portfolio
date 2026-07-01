@@ -12,174 +12,20 @@
   }
 }
 
+/* Flat, solid dark background on every layer the app can paint — html,
+   body, and the React mount point. This matches the #0a0a0f every
+   section component already sets on itself. Previously #root had a
+   decorative striped gradient (black/gray bands) left over from an
+   earlier version of the site where sections had no background of
+   their own. That gradient was sized to the *entire* scrollable page,
+   not per-section, so as more content was added the bands drifted out
+   of alignment with the actual sections — any tiny rendering gap would
+   reveal a random slice of it, which is why the "divider" between
+   sections looked different (in color and thickness) in different
+   places. Solid colour everywhere removes the possibility entirely. */
+html,
+body,
 #root {
-  background: linear-gradient(black 25%, rgb(31, 41, 54) 58%, black 15%);
+  background-color: #0a0a0f;
   min-height: 100vh;
-}
-
-body {
-  background: rgb(31, 41, 55);
-}
-
-.nav {
-  z-index: 10;
-}
-
-.link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#fff, #fff);
-  background-size: 0 3px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.5s ease-in-out;
-}
-
-.link-underline-black {
-  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#F2C, rgb(60, 34, 255)) */
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#000, #fff);
-}
-
-.link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 100%;
-  line-height: 1.2;
-}
-
-.portfolio,
-.contact {
-  margin-top: 5%;
-}
-
-.experience {
-  margin-top: 5%;
-}
-
-.education {
-  margin-top: 8%;
-}
-
-/* .experience {
-  margin-top: 8%;
-} */
-
-.nav-links {
-  text-underline-offset: 1rem;
-}
-
-.experience {
-  background-color: #1a202c;
-}
-
-.box {
-  background-color: #2d3748;
-  border-radius: 10px;
-  padding: 0px;
-  margin: 10px;
-  text-align: center;
-}
-
-.box h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.box p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.box span {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.card__info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.card__info p {
-  margin: 10;
-}
-
-@media (min-width: 400px) {
-  .card__info p {
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #root {
-    background: linear-gradient(rgb(31, 41, 55) 20%,
-        black 20%,
-        rgb(31, 41, 55) 65%,
-        black 25%);
-    min-height: 100vh;
-  }
-
-  .about,
-  .contact,
-  .portfolio,
-  .experience,
-  .education,
-  .home {
-    text-align: center;
-    height: 100%;
-  }
-
-  .about,
-  .portfolio,
-  .education,
-  .experience {
-    margin-top: 10%;
-  }
-
-  .home img {
-    margin-top: 25%;
-  }
-
-  .small-screen {
-    display: block;
-  }
-
-  .big-screen {
-    display: none;
-  }
-
-  .gap-8 {
-    gap: 4rem;
-  }
-
-  .home h2 {
-    font-size: 2.7rem;
-    line-height: 3rem;
-    margin-top: 7%;
-  }
-
-  .portfolio-btn {
-    margin: auto;
-  }
-
-  .px-12 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .experience {
-    padding-top: 10rem;
-  }
 }

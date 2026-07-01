@@ -59,7 +59,7 @@ const About: React.FC = () => {// Skills grouped by category
     <div
       // @ts-ignore
       name="about"
-      className="about w-full py-24"
+      className="w-full py-24"
       style={{ background: "#0a0a0f" }}
     >
       <div className="flex flex-col px-4 sm:px-6 max-w-screen-lg mx-auto">

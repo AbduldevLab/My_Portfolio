@@ -58,7 +58,7 @@ const AppContent: React.FC = () => {// Main application content component that i
   }, [navigate]);
 
   return (
-    <div>
+    <div style={{ background: "#0a0a0f", minHeight: "100vh" }}>
       <NavBar />
       <Home />
       <About />

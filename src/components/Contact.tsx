@@ -13,7 +13,7 @@ const Contact: React.FC = () => { // Contact form component
     <div
       // @ts-ignore
       name="contact"
-      className="contact w-full py-24"
+      className="w-full py-24"
       style={{ background: "#0a0a0f" }}
     >
       <div className="flex flex-col px-6 max-w-screen-lg mx-auto">
