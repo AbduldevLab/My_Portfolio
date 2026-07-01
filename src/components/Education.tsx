@@ -56,14 +56,20 @@ const Education: React.FC = () => { // Academic background component
 
   const certs = [
     {
-      name: "Technical Certifications",
+      name: "Technical badges (Credly)",
       issuer: "O'Reilly Media",
-      year: "current",
+      year: "—",
       url: "https://www.credly.com/users/abder-h/badges/credly",
     },
-    { name: "Front-End Development", issuer: "Brainnest", year: "2022" },
+    {
+      name: "Microsoft Learn",
+      issuer: "Microsoft",
+      year: "—",
+      url: "https://learn.microsoft.com/en-us/users/abderahmanhaouit-0116/",
+    },
+    { name: "First Aid (FAR)", issuer: "WIN", year: "2024" },
     { name: "PSA License", issuer: "ICSE", year: "2023" },
-    { name: "First Aid (FAR)", issuer: "WIN", year: "2025" },
+    { name: "Front-End Development", issuer: "Brainnest", year: "2022" },
     { name: "Sports Coach", issuer: "Fingal County Council", year: "2018" },
     { name: "Peer Educator", issuer: "Jigsaw Mental Health", year: "2017" },
   ];
