@@ -12,17 +12,6 @@
   }
 }
 
-/* Flat, solid dark background on every layer the app can paint — html,
-   body, and the React mount point. This matches the #0a0a0f every
-   section component already sets on itself. Previously #root had a
-   decorative striped gradient (black/gray bands) left over from an
-   earlier version of the site where sections had no background of
-   their own. That gradient was sized to the *entire* scrollable page,
-   not per-section, so as more content was added the bands drifted out
-   of alignment with the actual sections — any tiny rendering gap would
-   reveal a random slice of it, which is why the "divider" between
-   sections looked different (in color and thickness) in different
-   places. Solid colour everywhere removes the possibility entirely. */
 html,
 body,
 #root {
