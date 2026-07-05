@@ -1,6 +1,6 @@
 # My_Portfolio
 
-Welcome to my personal portfolio! This is a web application where you can learn more about me, my skills, and my projects. Check it out here: [AbduldevLab Portfolio](https://AbduldevLab.github.io/My_Portfolio/)
+Welcome to my personal portfolio! This is a web application where you can learn more about me, my skills, and my projects. Check it out here: [Portfolio](https://abderahmanhaouit.com/)
 
 ## Table of Contents
 

@@ -16,7 +16,7 @@
         if (redirect) {
           sessionStorage.removeItem("spa_redirect");
           // Push the stored path into history so BrowserRouter picks it up
-          window.history.replaceState(null, "", "/My_Portfolio" + redirect);
+          window.history.replaceState(null, "", "/" + redirect);
         }
       })();
     </script>
