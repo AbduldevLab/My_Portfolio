@@ -10,10 +10,10 @@
       var search = window.location.search;
       var hash = window.location.hash;
       // Strip the repo basename so we only store the sub-path
-      var base = "/My_Portfolio";
+      var base = "/";
       var subPath = path.startsWith(base) ? path.slice(base.length) : path;
       sessionStorage.setItem("spa_redirect", subPath + search + hash);
-      window.location.replace("/My_Portfolio/");
+      window.location.replace("/");
     </script>
   </head>
   <body></body>
