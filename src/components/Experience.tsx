@@ -120,13 +120,49 @@ const Experience: React.FC = () => {
       src: northernTrust,
       company: "Northern Trust",
       location: "Limerick, Ireland",
-      role: "Rotational Development Associate — Technology",
+      role: "Analyst, Rotational Development Associate (Software Eng.)",
       duration: "July 2024 – Present",
       color: "#2563eb",
       bullets: [
-        "Asset Servicing: backend microservices for multi-currency/time-zone fund & investor management [Java, Spring Boot, Snowflake]",
-        "Responsive UI deployment via Azure SWA/AKS [ReactJS, GitHub Actions, CI/CD]",
-        "Asset Management: GenAI R&D [Python, ReactJS, Databricks]",
+        <>
+          Transfer Agency: diagnosed inaccurate analytics tracking within a
+          React/Spring Boot microservices platform and designed a backend
+          caching fix, adopted team-wide to restore reliable usage metrics.
+          <br />
+          <span style={{ color: "#00d4aa" }}>
+            [Java, Spring Boot, React, Snowflake]
+          </span>
+        </>,
+        <>
+          Global Securities Finance: migrated a securities lending
+          reconciliation dashboard from PCF to Azure, rebuilding the front-end
+          in React and shipping a new reporting feature to meet a new business
+          requirement; delivered front-end and backend through to UAT via GitHub
+          Actions CI/CD.
+          <br />
+          <span style={{ color: "#00d4aa" }}>
+            [React, Azure SWA/AKS, Java, Spring Boot, UXPGen]
+          </span>
+        </>,
+        <>
+          Capital Markets: supported a separate team's core .NET trading
+          application at a former manager's request, dedicating primary capacity
+          to cross-team feature delivery and maintenance.
+          <br />
+          <span style={{ color: "#00d4aa" }}>[C#, .NET]</span>
+        </>,
+        <>
+          GenAI Research: drove testing, LLM integration, and pipeline
+          validation that helped ship the team's first live GenAI product — an
+          AI tool transcribing investor calls into key themes, insights &
+          sentiment — alongside PoC work on document summarization and an
+          access-controlled chatbot.
+          <br />
+          <span style={{ color: "#00d4aa" }}>
+            [Python, React, Azure, OpenAI APIs, LlamaIndex, Databricks,
+            PostgreSQL]
+          </span>
+        </>,
       ],
     },
     {

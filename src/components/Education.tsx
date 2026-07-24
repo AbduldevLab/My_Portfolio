@@ -12,7 +12,7 @@ const Education: React.FC = () => { // Academic background component
       school: "University of Limerick",
       grade: "1:1 · Thesis: 75%+ (predicted)",
       detail:
-        "Part-time. Thesis: Predicting chronic disease onset in older adults using longitudinal ML on the TILDA dataset. Pooled multi-wave XGBoost achieved 0.718 AUC — a 22% improvement over the single-wave baseline.",
+        "Thesis: Predicting chronic disease onset in older adults using longitudinal ML on the TILDA dataset. Pooled multi-wave XGBoost achieved 0.718 AUC — a 22% improvement over the single-wave baseline.",
       accent: "#00d4aa",
       img: ul,
     },
@@ -23,7 +23,7 @@ const Education: React.FC = () => { // Academic background component
       school: "Maynooth University",
       grade: "2:1 — FYP: 82%",
       detail:
-        "Final year project: Kake Dessert Delivery — full-stack Firebase web application for a real startup client.",
+        "Final year project: Kake Dessert Delivery — full stack Firebase web application for a real startup client.",
       accent: "#6c63ff",
       img: mu,
     },
@@ -56,7 +56,7 @@ const Education: React.FC = () => { // Academic background component
 
   const certs = [
     {
-      name: "Technical badges (Credly)",
+      name: "Technical certs",
       issuer: "O'Reilly Media",
       year: "—",
       url: "https://www.credly.com/users/abder-h/badges/credly",

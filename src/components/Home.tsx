@@ -58,14 +58,14 @@ const Home: React.FC = () => {// Home component displaying the hero section of t
               fontWeight: 400,
             }}
           >
-            Full-Stack Engineer & Inspiring Researcher
+            Full Stack Software Engineer & Inspiring Health Tech Enthusiast
           </p>
 
           <p
             className="mb-7"
             style={{ color: "#7a7a90", fontSize: "0.95rem", lineHeight: 1.75, maxWidth: 480 }}
           >
-            Full-stack engineer at{" "}
+            Software Engineer at{" "}
             <span style={{ color: "#f0f0f5", fontWeight: 500 }}>Northern Trust</span>
             , building microservices for global banking with Java, Spring Boot, React & Azure.
             Graduating with an{" "}

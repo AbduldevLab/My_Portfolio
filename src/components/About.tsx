@@ -101,14 +101,16 @@ const About: React.FC = () => {// Skills grouped by category
               from Maynooth University, where I earned 82% on my Final Year
               Project. I'm currently working as a{" "}
               <span style={{ color: "#f0f0f5", fontWeight: 500 }}>
-                Full-Stack Engineer at Northern Trust
+                Software Engineer at Northern Trust
               </span>{" "}
-              on a rotational development programme, contributing to asset
-              servicing microservices and NTAM tech GenAI R&D.
+              on a rotational development programme spanning Asset
+              Servicing [Transfer Agency] and [Capital Markets], and NTAM Tech [GenAI Research] — including
+              helping ship the teams first live AI-driven app (investor call transcription
+              tool).
             </p>
             <br />
             <p>
-              Alongside work, I'm graduating with an{" "}
+              Alongside work, I'm graduating this September with an{" "}
               <span style={{ color: "#f0f0f5", fontWeight: 500 }}>
                 MSc in Artificial Intelligence (1:1) from the University of
                 Limerick
