@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3e0c6f83.css",
-    "main.js": "/static/js/main.72d34b22.js",
+    "main.js": "/static/js/main.03d99afe.js",
     "static/media/kake.PNG": "/static/media/kake.5cb9c25448873a642cc1.PNG",
     "static/media/weatherApp.png": "/static/media/weatherApp.82196f7e43132536501e.png",
     "static/media/Abderahman_Haouit_CV.pdf": "/static/media/Abderahman_Haouit_CV.5d32f6b0588196bb3d84.pdf",
@@ -16,18 +16,18 @@
     "static/media/typescript.png": "/static/media/typescript.52ea0bc40ba11d507e7d.png",
     "static/media/riversdale.jpg": "/static/media/riversdale.3a6e6f9c773556232d80.jpg",
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/UL.jpg": "/static/media/UL.645e34114a7a3e2395ff.jpg",
     "static/media/MU.jpg": "/static/media/MU.9548f9dadb798b63e3fc.jpg",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/UL.jpeg": "/static/media/UL.3830e7e6b40d495d6d2d.jpeg",
     "static/media/firebase.png": "/static/media/firebase.5857e021bf02081fa355.png",
     "static/media/meta.jpg": "/static/media/meta.cb6ff16e53ec4e6af5de.jpg",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.3e0c6f83.css.map": "/static/css/main.3e0c6f83.css.map",
-    "main.72d34b22.js.map": "/static/js/main.72d34b22.js.map"
+    "main.03d99afe.js.map": "/static/js/main.03d99afe.js.map"
   },
   "entrypoints": [
     "static/css/main.3e0c6f83.css",
-    "static/js/main.72d34b22.js"
+    "static/js/main.03d99afe.js"
   ]
 }
