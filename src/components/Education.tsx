@@ -1,5 +1,5 @@
 import React from "react";
-import ul from "../assets/UL.jpg";
+import ul from "../assets/UL.jpeg";
 import mu from "../assets/MU.jpg";
 import riversdale from "../assets/riversdale.jpg";
 
