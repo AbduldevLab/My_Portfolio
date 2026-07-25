@@ -14,11 +14,13 @@ const About: React.FC = () => {// Skills grouped by category
         "Bootstrap",
         "Tailwind CSS",
         "Web Components",
+        "Jest",
+        "React Testing Library",
       ],
     },
     {
       group: "Back-end",
-      items: ["Java", "Spring Boot", "Python", "Node.js", "REST API", "JWT"],
+      items: ["Java", "Spring Boot", "Python", "Node.js", "REST API", "JWT", "Pytest", "FastAPI TestClient"],
     },
     {
       group: "Data & AI",

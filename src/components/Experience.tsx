@@ -160,7 +160,7 @@ const Experience: React.FC = () => {
           <br />
           <span style={{ color: "#00d4aa" }}>
             [Python, React, Azure, OpenAI APIs, LlamaIndex, Databricks,
-            PostgreSQL]
+            PostgreSQL, Jest, Pytest]
           </span>
         </>,
       ],
