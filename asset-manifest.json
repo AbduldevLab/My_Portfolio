@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3e0c6f83.css",
-    "main.js": "/static/js/main.d5ea7f2f.js",
+    "main.js": "/static/js/main.2b655fc0.js",
     "static/media/kake.PNG": "/static/media/kake.5cb9c25448873a642cc1.PNG",
     "static/media/weatherApp.png": "/static/media/weatherApp.82196f7e43132536501e.png",
     "static/media/Abderahman_Haouit_CV.pdf": "/static/media/Abderahman_Haouit_CV.5d32f6b0588196bb3d84.pdf",
@@ -11,10 +11,12 @@
     "static/media/ipaddress.png": "/static/media/ipaddress.06f458b5fd7dd903b3d4.png",
     "static/media/heroImage.jpeg": "/static/media/heroImage.c28bbcba513859d70aaf.jpeg",
     "static/media/targetlocation.jpg": "/static/media/targetlocation.03b42c7f11edfe5892cf.jpg",
+    "static/media/accenture.png": "/static/media/accenture.5e51d2a6d296a2e9f373.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/typescript.png": "/static/media/typescript.52ea0bc40ba11d507e7d.png",
     "static/media/riversdale.jpg": "/static/media/riversdale.3a6e6f9c773556232d80.jpg",
+    "static/media/valeo.png": "/static/media/valeo.bd7c830cb68cc5297e07.png",
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/MU.jpg": "/static/media/MU.9548f9dadb798b63e3fc.jpg",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
@@ -24,10 +26,10 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.3e0c6f83.css.map": "/static/css/main.3e0c6f83.css.map",
-    "main.d5ea7f2f.js.map": "/static/js/main.d5ea7f2f.js.map"
+    "main.2b655fc0.js.map": "/static/js/main.2b655fc0.js.map"
   },
   "entrypoints": [
     "static/css/main.3e0c6f83.css",
-    "static/js/main.d5ea7f2f.js"
+    "static/js/main.2b655fc0.js"
   ]
 }
