@@ -135,10 +135,10 @@ const Experience: React.FC = () => {
         </>,
         <>
           Global Securities Finance: migrated a securities lending
-          reconciliation dashboard from PCF to Azure, rebuilding the front-end
-          in React and shipping a new reporting feature to meet a new business
-          requirement; delivered front-end and backend through to UAT via GitHub
-          Actions CI/CD.
+          reconciliation dashboard from PCF to Azure, along with its CLI
+          tooling from XPS to UXPGen, and implemented a new reporting feature
+          to meet a business requirement; delivered front-end and backend
+          through to UAT via GitHub Actions CI/CD.
           <br />
           <span style={{ color: "#00d4aa" }}>
             [React, Azure SWA/AKS, Java, Spring Boot, UXPGen]
@@ -152,9 +152,9 @@ const Experience: React.FC = () => {
           <span style={{ color: "#00d4aa" }}>[C#, .NET]</span>
         </>,
         <>
-          GenAI Research: drove testing, LLM integration, and pipeline
-          validation that helped ship the team's first live GenAI product — an
-          AI tool transcribing investor calls into key themes, insights &
+          GenAI Research: drove testing, LLM integration, and evaluation that
+          helped ship the team's first live GenAI product — an AI tool
+          transcribing investor calls into key themes, insights &
           sentiment — alongside PoC work on document summarization and an
           access-controlled chatbot.
           <br />
